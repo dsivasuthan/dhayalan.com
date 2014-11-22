@@ -9,17 +9,17 @@ h1{
 }
 
 a:link {
-    color: #FF0000;
+    color: #000000;
 }
 
 /* visited link */
 a:visited {
-    color: #00FF00;
+    color: #000000;
 }
 
 /* mouse over link */
 a:hover {
-    color: #FF00FF;
+    color: #0000FF;
 }
 
 /* selected link */
