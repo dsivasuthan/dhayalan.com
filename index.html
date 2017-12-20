@@ -180,12 +180,6 @@ h2 {
 		<img src='./current/flickr2.svg' alt="Flickr"-->
 	</a>
 	<!--p><a href="/blog/">Latest blog post</a-->
-<?php
-  $file = fopen("ip.html","a");
-  $ip=date('Y-m-d H:i:s').' - <a href=http://api.ipinfodb.com/v3/ip-city/?key=872dd278387ca2e3a722297f2d02b55ba6d0272ffa1c724c09539a4c3593e78a&ip='.$_SERVER['REMOTE_ADDR'].'>'.$_SERVER['REMOTE_ADDR'].'</a> - '. $_SERVER[REQUEST_URI].' - '.'<br>';
-  fwrite($file,$ip);
-  fclose($file);
-?>
 <!--link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet" async-->
 
 
