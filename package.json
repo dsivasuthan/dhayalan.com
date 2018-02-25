@@ -2,12 +2,20 @@
   "name": "dsivasuthan.github.io",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "markdown.js",
+  "bin": {
+    "markdown": "./bin/markdown",
+    "markdownb": "./bin/markdownb",
+    "github-markdown": "./bin/github-markdown",
+    "github-markdownb": "./bin/github-markdownb"
+  },
+  "preferGlobal": true,
   "dependencies": {
     "markdown-to-html": "0.0.13"
   },
   "devDependencies": {},
   "scripts": {
+    "start": "bash script/render",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -1,0 +1,2 @@
+#!/bin/bash
+node bin/markdown projects.md -h -s /style.css > projects.html

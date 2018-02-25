@@ -25,13 +25,14 @@ body {
 	left: 0;
 	right: 0;*/
 	margin: auto;
+  padding: 20px;
 	max-width: 800px;
 }
 
 h1 {
 	/*font-size: 125px;*/
 	font-weight: 700;
-	/*margin: 25px 0 0 0;*/
+	margin: 100px 0 0 0;
 }
 
 h2 {
@@ -57,12 +58,13 @@ p {
 
 a p {
 	color: #000000;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 
-p a:hover {
+a:hover {
 	color: #444444;
 	opacity:0.9;
+  text-decoration: underline;
 }
 
 a {
@@ -74,12 +76,8 @@ a {
 
 a img, svg {
 	margin: 45px 8px 10px 8px;
-	opacity: 0.9;
+	/*opacity: 0.9;*/
 	width: 64px;
-}
-
-a:hover {
-	opacity: 0.8;
 }
 
 pre {
