@@ -1,49 +1,32 @@
+# projects
 These projects are done in my free time and most of them are as old as 15 years. Work projects are not listed here, but they showcase my skills better than any of these projects do. Contact me if you want to know about my work projects. Thank you.
 
-Some work projects:
-  Ryerson United Way – Built on CQ5.
-  Ozawa – Built on WordPress.
-  A lot of company admin panels – please ask me.
-  Non-work projects:
+## Some work projects:
+  * Ryerson United Way
+    Built on CQ5.
+  * Ozawa – Built on WordPress.
+  * A lot of company admin panels – please ask me.
 
-# Android Applications:
+## Non-work projects:
 
-  Simple Sketch
+### Android Applications:
+
+#### Simple Sketch
     I got tired of feature-rich and slow note-taking apps that require whole bunch of permissions to run. So, I made my own simple app to draw and save hand-drawn notes. The only permission it requires is the access to Storage to save the created note. Not even a permission to connect to Internet is required, and it loads super fast.
 
 
-Chrome Extensions:
+### Chrome Extensions:
 
-Chrome Sound Effects – Add sounds to events triggered by user in Chrome, like switching tabs, etc. They can be manually disabled.
-Change all UI fonts – Changes all the font-faces on all the web sites to a user given local font. Enter your desired font in the options by clicking the extension icon.
+#### Chrome Sound Effects
+  Add sounds to events triggered by user in Chrome, like switching tabs, etc. They can be manually disabled.
+#### Change all UI fonts
+  Changes all the font-faces on all the web sites to a user given local font. Enter your desired font in the options by clicking the extension icon.
 
 
 Simple Windows/Web Applications:
 
 Weather app – Made this on a Google Developer workshop called Progressive Web Apps. I used Service workers to do the updates and show cache data while offline.
 Google Search Widget – Type text anThese projects are done in my free time and most of them are as old as 15 years. Work projects are not listed here, but they showcase my skills better than any of these projects do. Contact me if you want to know about my work projects. Thank you.
-
-Some work projects:
-Ryerson United Way – Built on CQ5.
-Ozawa – Built on WordPress.
-A lot of company admin panels – please ask me.
-Non-work projects:
-Android Applications:
-
-Simple Sketch – I got tired of feature-rich and slow note-taking apps that require whole bunch of permissions to run. So, I made my own simple app to draw and save hand-drawn notes. The only permission it requires is the access to Storage to save the created note. Not even a permission to connect to Internet is required, and it loads super fast.
-
-
-Chrome Extensions:
-
-Chrome Sound Effects – Add sounds to events triggered by user in Chrome, like switching tabs, etc. They can be manually disabled.
-Change all UI fonts – Changes all the font-faces on all the web sites to a user given local font. Enter your desired font in the options by clicking the extension icon.
-
-
-Simple Windows/Web Applications:
-
-Weather app – Made this on a Google Developer workshop called Progressive Web Apps. I used Service workers to do the updates and show cache data while offline.
-Google Search Widget – Type text and hit enter to search that text.
-Oscar Winner Finder – Used PHP and MySQL to implement a simple search function to retrieve the title, year and Rotten Tomatoes score of the Academic Award-winning feature films.
 
 
 Mockups:
