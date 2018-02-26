@@ -1,4 +1,5 @@
-# projects
+projects
+======
 
 These projects are done in my free time and most of them are as old as 15 years. Work projects are not listed here, but they showcase my skills better than any of these projects do. Contact me if you want to know about my work projects. Thank you.
 
@@ -36,17 +37,11 @@ These projects are done in my free time and most of them are as old as 15 years.
 ### [Weather app](https://progressive-web-apps-736ed.firebaseapp.com/)
 * Made this on a Google Developer workshop called Progressive Web Apps. I used Service workers to do the updates and show cache data while offline.
 
-### [Google Search Widget](http://sivasuthan.com/blog/my-stuff/win/google-search.exe)
+### [Google Search Widget](/projects/win/google-search.exe)
 * Type text and hit enter to search that text.
 
-### [Oscar Winner Finder](http://sivasuthan.com/projects/dbs/1/)
+### [Oscar Winner Finder](/projects/dbs/1/)
 * Used PHP and MySQL to implement a simple search function to retrieve the title, year and Rotten Tomatoes score of the Academic Award-winning feature films.
-
-
-## Mockups:
-
-### [Facebook](http://sivasuthan.com/facebook)
-* Used image map to create the working links.
 
 
 ## School Projects:
@@ -61,14 +56,18 @@ These projects are done in my free time and most of them are as old as 15 years.
 ## Preserving Golden Treasures:
 
 ### [Thirukural (திருக்குறள்)](https://github.com/dsivasuthan/thirukurals)
-Thiruvalluvar wrote this classic Tamil sangam literature, consisting of 1330 couplets or Kurals, sometime between the third and first centuries BCE. I came across this compilation some time ago and made a copy/backup for myself. Thanks to all those who help compile this timeless piece of writing.
+* Thiruvalluvar wrote this classic Tamil sangam literature, consisting of 1330 couplets or Kurals, sometime between the third and first centuries BCE. I came across this compilation some time ago and made a copy/backup for myself. Thanks to all those who help compile this timeless piece of writing.
 
 ## Old Stuff:
-### [my old homepage]
+
+### [my old homepage](/projects/old_stuff/Home.htm)
 
 ### Stuff I modified from other sites:
 
-[Onscreen Keyboards for Tamil and Sinhala](http://sivasuthan.com/blog/my-stuff/kbconverters/kbconverters.htm)
+[Onscreen Keyboards for Tamil and Sinhala](/projects/kbconverters/kbconverters.htm)
+
+
+
 
 
 ** UNDER CONSTRUCTION – more on the way
