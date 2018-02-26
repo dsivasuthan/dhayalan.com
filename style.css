@@ -29,57 +29,57 @@ body {
 }
 
 h1 {
+
 	/*font-size: 125px;*/
-	font-weight: 700;
-	/*margin: 25px 0 0 0;*/
+	/* font-weight: 700; */
+	margin: 100px 0 0 0;
 }
 
 h2 {
+  /* color: #aaa; */
 	/*font-size: 36px;*/
-	font-weight: 500;
-	/*margin: 10px 0 0 0;*/
+	/* font-weight: 500; */
+	margin: 70px 0 0 0;
+}
+* > a {
+  color:#fff;
 }
 
-p {
+p, li {
 	/*font-family: "Raleway", sans-serif;*/
 	/*margin: 30px auto;*/
 	/*font-size: 20px;*/
 	text-align: left;
+  color:#aaa;
 	/*background-color: #f0ffff;*/
 
 }
-.border {
-	color: #ffffff;
-	max-width: 800px;
-	border:1px solid grey;
-	padding: 20px;
+
+p {
+	/* color: #000000; */
 }
 
-a p {
-	color: #000000;
-	text-decoration: underline;
-}
-
-p a:hover {
-	color: #444444;
-	opacity:0.9;
+a:hover {
+	/* color: #444444; */
+	opacity:0.7;
+  text-decoration: none;
 }
 
 a {
-	text-decoration: none;
+	text-decoration: underline;
 	outline: 0;
-	color:grey;
+	/* color:grey; */
 	transition: all 0.5s ease;
 }
 
 a img, svg {
 	margin: 45px 8px 10px 8px;
-	opacity: 0.9;
+	/* opacity: 0.9; */
 	width: 64px;
 }
 
 a:hover {
-	opacity: 0.8;
+	/* opacity: 0.8; */
 }
 
 pre {
