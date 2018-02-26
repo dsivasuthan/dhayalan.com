@@ -1,0 +1,9 @@
+<style>
+
+
+<div style="background-image:url(http://dl.dropbox.com/u/9678758/HTML/a.jpg);
+	background-repeat:repeat;
+	background-attachment:fixed;
+	">
+
+</style>

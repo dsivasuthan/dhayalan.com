@@ -1,0 +1,19 @@
+/* CSS Document */
+.buttonNormal
+{
+	font-size: 18px;
+	width: 30px;
+}
+.buttonSpecial
+{
+	font-size: 18px; 
+	width: 63px;
+}
+.keyBlock
+{
+	border-style: solid;
+	border-color: rgb(0, 0, 100);
+	border-width: 1px;
+}
+
+

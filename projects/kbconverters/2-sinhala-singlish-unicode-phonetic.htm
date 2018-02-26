@@ -1,0 +1,1408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0059)http://www.ucsc.cmb.ac.lk/ltrl/services/feconverter/t2.html -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <TITLE>Real Time Unicode Converter</TITLE>
+    
+    <LINK rel="stylesheet" href="./04 Real Time Unicode Converter_files/main.css">
+    <STYLE type="text/css">
+        @font-face {
+            font-family: Potha;
+            src: url(POTHA0.eot);
+        }
+        .english{
+            color: purple;
+        }
+        .sinhala{
+            font-family: Iskoola Pota;
+            color: navy;
+        }
+        .title{
+            font-familiy:Arial;
+            font-weight:bold;
+            color:navy;
+        }
+        .title2{
+            font-familiy:Arial;
+            font-weight:bold;
+        }
+        .link{
+            font-weight: bold;
+            color: green;
+            border-width: 1px;
+            border-style:solid;
+            border-color: green;
+            cursor:hand;
+        }
+    </STYLE>
+
+    <SCRIPT language="JavaScript" type="text/javascript">
+<!-- Begin
+var text;
+var nVowels;
+var consonants= new Array()
+var consonantsUni= new Array()
+var vowels= new Array()
+var vowelsUni= new Array()
+var vowelModifiersUni= new Array()
+var specialConsonants= new Array()
+var specialConsonantsUni= new Array()
+var specialCharUni= new Array()
+var specialChar= new Array()
+
+
+    vowelsUni[0]='ඌ';    vowels[0]='oo';    vowelModifiersUni[0]='ූ';
+    vowelsUni[1]='ඕ';    vowels[1]='o\\)';    vowelModifiersUni[1]='ෝ';
+    vowelsUni[2]='ඕ';    vowels[2]='oe';    vowelModifiersUni[2]='ෝ';
+    vowelsUni[3]='ආ';    vowels[3]='aa';    vowelModifiersUni[3]='ා';
+    vowelsUni[4]='ආ';    vowels[4]='a\\)';    vowelModifiersUni[4]='ා';
+    vowelsUni[5]='ඈ';    vowels[5]='Aa';    vowelModifiersUni[5]='ෑ';
+    vowelsUni[6]='ඈ';    vowels[6]='A\\)';    vowelModifiersUni[6]='ෑ';
+    vowelsUni[7]='ඈ';    vowels[7]='ae';    vowelModifiersUni[7]='ෑ';
+    vowelsUni[8]='ඊ';    vowels[8]='ii';    vowelModifiersUni[8]='ී';
+    vowelsUni[9]='ඊ';    vowels[9]='i\\)';    vowelModifiersUni[9]='ී';
+    vowelsUni[10]='ඊ';    vowels[10]='ie';    vowelModifiersUni[10]='ී';
+    vowelsUni[11]='ඊ';    vowels[11]='ee';    vowelModifiersUni[11]='ී';
+    vowelsUni[12]='ඒ';    vowels[12]='ea';    vowelModifiersUni[12]='ේ';
+    vowelsUni[13]='ඒ';    vowels[13]='e\\)';    vowelModifiersUni[13]='ේ';
+    vowelsUni[14]='ඒ';    vowels[14]='ei';    vowelModifiersUni[14]='ේ';
+    vowelsUni[15]='ඌ';    vowels[15]='uu';    vowelModifiersUni[15]='ූ';
+    vowelsUni[16]='ඌ';    vowels[16]='u\\)';    vowelModifiersUni[16]='ූ';
+    vowelsUni[17]='ඖ';    vowels[17]='au';    vowelModifiersUni[17]='ෞ';
+    vowelsUni[18]='ඇ';    vowels[18]='/\a';    vowelModifiersUni[18]='ැ';
+    
+    vowelsUni[19]='අ';    vowels[19]='a';    vowelModifiersUni[19]='';
+    vowelsUni[20]='ඇ';    vowels[20]='A';    vowelModifiersUni[20]='ැ';
+    vowelsUni[21]='ඉ';    vowels[21]='i';    vowelModifiersUni[21]='ි';
+    vowelsUni[22]='එ';    vowels[22]='e';    vowelModifiersUni[22]='ෙ';
+    vowelsUni[23]='උ';    vowels[23]='u';    vowelModifiersUni[23]='ු';
+    vowelsUni[24]='ඔ';    vowels[24]='o';    vowelModifiersUni[24]='ො';
+    vowelsUni[25]='ඓ';    vowels[25]='I';    vowelModifiersUni[25]='ෛ';
+    nVowels=26;
+
+    specialConsonantsUni[0]='ං'; specialConsonants[0]=/\\n/g;
+    specialConsonantsUni[1]='ඃ'; specialConsonants[1]=/\\h/g;
+    specialConsonantsUni[2]='ඞ'; specialConsonants[2]=/\\N/g;
+    specialConsonantsUni[3]='ඍ'; specialConsonants[3]=/\\R/g;
+    //special characher Repaya
+    specialConsonantsUni[4]='ර්'+'\u200D'; specialConsonants[4]=/R/g;
+    specialConsonantsUni[5]='ර්'+'\u200D'; specialConsonants[5]=/\\r/g;
+    
+    consonantsUni[0]='ඬ'; consonants[0]='nnd';
+    consonantsUni[1]='ඳ'; consonants[1]='nndh';
+    consonantsUni[2]='ඟ'; consonants[2]='nng';
+    consonantsUni[3]='ථ'; consonants[3]='th';
+    consonantsUni[4]='ධ'; consonants[4]='dh';
+    consonantsUni[5]='ඝ'; consonants[5]='gh';
+    consonantsUni[6]='ඡ'; consonants[6]='ch';
+    consonantsUni[7]='ඵ'; consonants[7]='ph';
+    consonantsUni[8]='භ'; consonants[8]='bh';
+    consonantsUni[9]='ඣ'; consonants[9]='jh';
+    consonantsUni[10]='ෂ'; consonants[10]='sh';
+    consonantsUni[11]='ඥ'; consonants[11]='GN';
+    consonantsUni[12]='ඤ'; consonants[12]='KN';
+    consonantsUni[13]='ළු'; consonants[13]='Lu';
+    consonantsUni[14]='ඛ'; consonants[14]='kh';
+    consonantsUni[15]='ඨ'; consonants[15]='Th';
+    consonantsUni[16]='ඪ'; consonants[16]='Dh';
+    
+    consonantsUni[17]='ශ'; consonants[17]='S';
+    consonantsUni[18]='ද'; consonants[18]='d';
+    consonantsUni[19]='ච'; consonants[19]='c';
+    consonantsUni[20]='ත'; consonants[20]='t';
+    consonantsUni[21]='ට'; consonants[21]='T';
+    consonantsUni[22]='ක'; consonants[22]='k';
+    consonantsUni[23]='ඩ'; consonants[23]='D';
+    consonantsUni[24]='න'; consonants[24]='n';
+    consonantsUni[25]='ප'; consonants[25]='p';
+    consonantsUni[26]='බ'; consonants[26]='b';
+    consonantsUni[27]='ම'; consonants[27]='m';
+    consonantsUni[28]='‍ය'; consonants[28]='\\u005C' + 'y';
+    consonantsUni[29]='‍ය'; consonants[29]='Y';
+    consonantsUni[30]='ය'; consonants[30]='y';
+    consonantsUni[31]='ජ'; consonants[31]='j';
+    consonantsUni[32]='ල'; consonants[32]='l';
+    consonantsUni[33]='ව'; consonants[33]='v';
+    consonantsUni[34]='ව'; consonants[34]='w';
+    consonantsUni[35]='ස'; consonants[35]='s';
+    consonantsUni[36]='හ'; consonants[36]='h';
+    consonantsUni[37]='ණ'; consonants[37]='N';
+    consonantsUni[38]='ළ'; consonants[38]='L';
+    consonantsUni[39]='ඛ'; consonants[39]='K';
+    consonantsUni[40]='ඝ'; consonants[40]='G';
+    consonantsUni[41]='ඵ'; consonants[41]='P';
+    consonantsUni[42]='ඹ'; consonants[42]='B';
+    consonantsUni[43]='ෆ'; consonants[43]='f';
+    consonantsUni[44]='ග'; consonants[44]='g';
+    //last because we need to ommit this in dealing with Rakaransha
+    consonantsUni[45]='ර'; consonants[45]='r'; 
+    
+    specialCharUni[0]='ෲ'; specialChar[0]='ruu';
+    specialCharUni[1]='ෘ'; specialChar[1]='ru';
+    //specialCharUni[2]='්‍ර'; specialChar[2]='ra';
+
+
+function startText() {
+    var s,r,v;
+    text = document.txtBox.box1.value;  
+      
+    //special consonents
+    for (var i=0; i<specialConsonants.length; i++)
+        text = text.replace(specialConsonants[i], specialConsonantsUni[i]);
+   
+    //consonents + special Chars
+    for (var i=0; i<specialCharUni.length; i++){
+        for (var j=0;j<consonants.length;j++){
+            s = consonants[j] + specialChar[i];
+            v = consonantsUni[j] + specialCharUni[i];
+            r = new RegExp(s,"g");
+            text = text.replace(r, v);
+        }
+    }
+    //consonants + Rakaransha + vowel modifiers
+    for (var j=0;j<consonants.length;j++){
+        for (var i=0;i<vowels.length;i++){
+            s = consonants[j] + "r" + vowels[i];
+            v = consonantsUni[j] + "්‍ර" + vowelModifiersUni[i];
+            r = new RegExp(s,"g");
+            text = text.replace(r, v);
+        }
+        s = consonants[j] + "r";
+        v = consonantsUni[j] + "්‍ර";
+        r = new RegExp(s,"g");
+        text = text.replace(r, v);
+    }
+    //consonents + vowel modifiers
+    for (var i=0;i<consonants.length;i++){
+        for (var j=0;j<nVowels;j++){ 
+            s = consonants[i]+vowels[j];
+            v = consonantsUni[i] + vowelModifiersUni[j];
+            r = new RegExp(s,"g");
+            text = text.replace(r, v);
+        }
+    }
+
+    //consonents + HAL
+    for (var i=0; i<consonants.length; i++){
+        r = new RegExp(consonants[i],"g");
+        text = text.replace(r, consonantsUni[i]+"්");
+    }
+        
+    //vowels
+    for (var i=0; i<vowels.length; i++){
+        r = new RegExp(vowels[i],"g");
+        text = text.replace(r, vowelsUni[i]);
+    }
+
+    document.txtBox.box2.value=text;
+}
+
+function copyit(theField) {
+    var tempval=eval("document."+theField);
+    tempval.focus();
+    tempval.select();
+    therange=tempval.createTextRange();
+    therange.execCommand("Copy")
+}
+
+var schemeVisible = 0;
+function changeVisibility(){
+    if (schemeVisible){
+        document.getElementById('scheme').style.visibility='hidden';
+        document.getElementById('link').innerHTML="&nbsp;Show Transliteration Scheme&nbsp;";
+        schemeVisible=0;
+    }
+    else{
+        document.getElementById('scheme').style.visibility='visible';
+        document.getElementById('link').innerHTML="&nbsp;&nbsp;Hide Transliteration Scheme&nbsp;";
+        schemeVisible=1;
+    }
+}
+//  End -->
+
+    </SCRIPT>
+
+</HEAD><BODY onload="javascript:txtBox.box1.focus();">
+    <CENTER>
+        <TABLE width="600px">
+            <TBODY><TR>
+                <TD>
+                    <FORM name="txtBox" id="txtBox">
+                        <IMG src="./04 Real Time Unicode Converter_files/ui3RT.jpg" alt="Real Time Font Converter"><BR>
+                        <BR>
+                        <SPAN class="TableText">Transliterated ( SinGlish Phonetic Scheme)</SPAN>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <A><SPAN id="link" class="link" align="right" onclick="changeVisibility()">
+                            &nbsp;Show Transliteration Scheme&nbsp;</SPAN></A>
+                        <BR>
+                        <TEXTAREA onkeyup="startText();" onselect="startText();" onclick="startText();" style="font-size: 12pt;
+                            width: 600px;" name="box1" rows="7"></TEXTAREA>
+                        <INPUT type="reset" value="Reset" style="position: relative; left: 500px; width: 100px;">
+                        <BR>
+                        <SPAN class="TableText">Unicode (යුනිකෝඩ්)</SPAN><BR>
+                        <TEXTAREA style="font-size: 14pt; font-family: Potha, Malithi Web , Arial Unicode MS;
+                            width: 600px;" name="box2" rows="7"></TEXTAREA>
+                        <INPUT onclick="copyit(&#39;txtBox.box2&#39;)" type="button" value="Copy" style="position: relative;
+                            left: 500px; width: 100px;">
+                    </FORM>
+                    <BR>
+                    <HR>
+                    <CENTER>
+                        <SPAN class="p">© 2006 Language Technology Research Laboratory - University of Colombo
+                            School of Computing</SPAN><BR>
+                        <SPAN class="p" style="color: Red;">Best viewed with Internet Explorer 5.x or higher
+                            in 1024 x 768 resolution.</SPAN>
+                    </CENTER>
+                </TD>
+            </TR>
+        </TBODY></TABLE>
+    </CENTER>
+<DIV id="scheme" style="visibility: hidden; position: absolute; top: 239px; border: green 1px solid;
+        background-color: white;">
+                    <TABLE border="0" cellpadding="0" cellspacing="0" align="center">
+                    <TBODY><TR>
+                    <TD rowspan="5" style="width:10px;">
+                    <TD><TD><TD><TD><TD>
+                    <TD rowspan="5" style="width:10px;">
+                    </TR>
+                    <TR><TD colspan="5" style="height:5px;"></TR>
+                        <TR>
+                            <TD style="width: 216px" valign="top" align="center">
+                                <TABLE border="0" cellspacing="0" cellpadding="0">
+                                    <TBODY><TR>
+                                        <TD colspan="9" bgcolor="#EBEBEB">
+                                            <P align="center">
+                                                <SPAN class="title">Vowel Sounds</SPAN></P>
+                                        </TD>
+                                    </TR>
+                                    <TR>
+                                        <TD colspan="3">
+                                            <P align="center">
+                                                <SPAN class="title2">Short</SPAN></P>
+                                        </TD>
+                                        <TD style="width: 15px;">
+                                        <TD colspan="5">
+                                            <P align="center">
+                                                <SPAN class="title2">Long</SPAN></P>
+                                        </TD>
+                                    </TR>
+                                    <TR>
+                                        <TD bgcolor="#EBDDB1" style="width: 45px">
+                                            <P>
+                                                <SPAN class="sinhala">අ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#EBDDB1" style="width: 30px">
+                                            <P>
+                                                <SPAN class="english">a</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#EBDDB1" style="width: 30px">
+                                        </TD>
+                                        <TD>
+                                        </TD>
+                                        <TD bgcolor="#E0E2AF" style="width: 45px">
+                                            <P>
+                                                <SPAN class="sinhala">ආ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E0E2AF" style="width: 30px">
+                                            <P>
+                                                <SPAN class="english">aa</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E0E2AF" style="width: 30px">
+                                            <P>
+                                                <SPAN class="english">a)</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E0E2AF" style="width: 30px">
+                                            &nbsp;
+                                        </TD>
+                                        <TD width="30" bgcolor="#E0E2AF">
+                                        </TD>
+                                    </TR>
+                                    <TR>
+                                        <TD bgcolor="#F7F0DD">
+                                            <P>
+                                                <SPAN class="sinhala">ඇ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F7F0DD">
+                                            <P>
+                                                <SPAN class="english">A</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F7F0DD">
+                                            <P>
+                                                <SPAN class="english">\a</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                            &nbsp;
+                                        </TD>
+                                        <TD bgcolor="#F0F1DA">
+                                            <P>
+                                                <SPAN class="sinhala">ඈ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F0F1DA">
+                                            <P>
+                                                <SPAN class="english">Aa</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F0F1DA">
+                                            <P>
+                                                <SPAN class="english">A)</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F0F1DA">
+                                            <P>
+                                                <SPAN class="english">ae</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F0F1DA">
+                                            &nbsp;
+                                        </TD>
+                                    </TR>
+                                    <TR>
+                                        <TD bgcolor="#EBDDB1">
+                                            <P>
+                                                <SPAN class="sinhala">ඉ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#EBDDB1">
+                                            <P>
+                                                <SPAN class="english">i</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#EBDDB1">
+                                        </TD>
+                                        <TD>
+                                        </TD>
+                                        <TD bgcolor="#E0E2AF">
+                                            <P>
+                                                <SPAN class="sinhala">ඊ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E0E2AF">
+                                            <P>
+                                                <SPAN class="english">ii</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E0E2AF">
+                                            <P>
+                                                <SPAN class="english">i)</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E0E2AF">
+                                            <P>
+                                                <SPAN class="english">ie</SPAN></P>
+                                        </TD>
+                                        <TD width="24" bgcolor="#E0E2AF">
+                                            <P>
+                                                <SPAN class="english">ee</SPAN></P>
+                                        </TD>
+                                    </TR>
+                                    <TR>
+                                        <TD bgcolor="#F7F0DD">
+                                            <P>
+                                                <SPAN class="sinhala">එ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F7F0DD">
+                                            <P>
+                                                <SPAN class="english">e</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F7F0DD">
+                                            &nbsp;
+                                        </TD>
+                                        <TD>
+                                            &nbsp;
+                                        </TD>
+                                        <TD bgcolor="#F0F1DA">
+                                            <P>
+                                                <SPAN class="sinhala">ඒ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F0F1DA">
+                                            <P>
+                                                <SPAN class="english">ea</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F0F1DA">
+                                            <P>
+                                                <SPAN class="english">e)</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F0F1DA">
+                                            <P>
+                                                <SPAN class="english">ei</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F0F1DA">
+                                            &nbsp;
+                                        </TD>
+                                    </TR>
+                                    <TR>
+                                        <TD bgcolor="#EBDDB1">
+                                            <P>
+                                                <SPAN class="sinhala">ඔ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#EBDDB1">
+                                            <P>
+                                                <SPAN class="english">o</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#EBDDB1">
+                                            &nbsp;
+                                        </TD>
+                                        <TD>
+                                            &nbsp;
+                                        </TD>
+                                        <TD bgcolor="#E0E2AF">
+                                            <P>
+                                                <SPAN class="sinhala">ඕ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E0E2AF">
+                                            <P>
+                                                <SPAN class="english">oe</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E0E2AF">
+                                            <P>
+                                                <SPAN class="english">o)</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E0E2AF">
+                                            &nbsp;
+                                        </TD>
+                                        <TD bgcolor="#E0E2AF">
+                                            &nbsp;
+                                        </TD>
+                                    </TR>
+                                    <TR>
+                                        <TD bgcolor="#F7F0DD">
+                                            <P>
+                                                <SPAN class="sinhala">උ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F7F0DD">
+                                            <P>
+                                                <SPAN class="english">u</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F7F0DD">
+                                            &nbsp;
+                                        </TD>
+                                        <TD>
+                                            &nbsp;
+                                        </TD>
+                                        <TD bgcolor="#F0F1DA">
+                                            <P>
+                                                <SPAN class="sinhala">ඌ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F0F1DA">
+                                            <P>
+                                                <SPAN class="english">uu</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F0F1DA">
+                                            <P>
+                                                <SPAN class="english">u)</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F0F1DA">
+                                            <P>
+                                                <SPAN class="english">oo</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F0F1DA">
+                                            &nbsp;
+                                        </TD>
+                                    </TR>
+                                    <TR>
+                                        <TD>
+                                        </TD>
+                                        <TD>
+                                        </TD>
+                                        <TD>
+                                        </TD>
+                                        <TD>
+                                        <TD bgcolor="#E0E2AF">
+                                            <P>
+                                                <SPAN class="sinhala">ඖ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E0E2AF">
+                                            <P>
+                                                <SPAN class="english">au</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E0E2AF">
+                                        <TD bgcolor="#E0E2AF">
+                                        <TD bgcolor="#E0E2AF">
+                                    </TR>
+                                </TBODY></TABLE>
+                                </TD>
+                            <TD style="width: 20px">
+                            <TD style="width: 248px" valign="top" align="center">
+                                <TABLE border="0" cellpadding="0" cellspacing="0">
+                                    <TBODY><TR>
+                                        <TD colspan="4" bgcolor="#EBEBEB">
+                                            <P align="center">
+                                                <SPAN class="title">Auxiliaries</SPAN></P>
+                                        </TD>
+                                    </TR>
+                                    <TR>
+                                        <TD colspan="4">
+                                            <P align="center">
+                                                <SPAN class="title2">Special Auxiliaries</SPAN></P>
+                                        </TD>
+                                    </TR>
+                                    <TR bgcolor="#E8F4D0">
+                                        <TD style="width: 40px">
+                                            <P>
+                                                <SPAN class="sinhala">ර්</SPAN></P>
+                                        </TD>
+                                        <TD style="width: 40px">
+                                            <P>
+                                                <SPAN style="font-family: &quot;Iskoola Pota&quot;">මර්‍</SPAN></P>
+                                        </TD>
+                                        <TD style="width: 70px">
+                                            <P>
+                                                <SPAN class="english">\r</SPAN><I>&lt;letter&gt;</I></P>
+                                        </TD>
+                                        <TD style="width: 70px">
+                                            <P>
+                                                <SPAN class="english">R</SPAN><I>&lt;letter&gt;</I></P>
+                                        </TD>
+                                    </TR>
+                                    <TR bgcolor="#F5FBEC">
+                                        <TD>
+                                            <P>
+                                                <SPAN class="sinhala">්‍ය</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                            <P>
+                                                <SPAN style="font-family: &quot;Iskoola Pota&quot;">ධ්‍ය</SPAN>‍</P>
+                                        </TD>
+                                        <TD>
+                                            <P>
+                                                <I>&lt;letter&gt;</I><SPAN class="english">Y</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                            <P>
+                                                <I>&lt;letter&gt;</I><SPAN class="english">\y</SPAN></P>
+                                        </TD>
+                                    </TR>
+                                    <TR>
+                                        <TD colspan="4">
+                                            <P align="center">
+                                                <SPAN class="title2">Vowel Sound Auxiliaries</SPAN></P>
+                                        </TD>
+                                    </TR>
+                                    <TR bgcolor="#E8F4D0">
+                                        <TD>
+                                            <P>
+                                                <SPAN class="sinhala">ෘ</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                            <P>
+                                                <SPAN style="font-family: &quot;Iskoola Pota&quot;">කෘ</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                            <P>
+                                                <I>&lt;letter&gt;</I><SPAN class="english">ru</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                            &nbsp;
+                                        </TD>
+                                    </TR>
+                                    <TR bgcolor="#F5FBEC">
+                                        <TD>
+                                            <P>
+                                                <SPAN class="sinhala">ෟ</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                            <P>
+                                                <SPAN style="font-family: &quot;Iskoola Pota&quot;">චෞ</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                            <P>
+                                                <I>&lt;letter&gt;</I><SPAN class="english">au</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                    </TR>
+                                    <TR bgcolor="#E8F4D0">
+                                        <TD><P>
+                                                <SPAN class="sinhala">ෛ</SPAN> </P>
+                                        </TD>
+                                        <TD>
+                                            <P>
+                                                <SPAN style="font-family: &quot;Iskoola Pota&quot;">මෛ</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                            <P>
+                                                <I>&lt;letter&gt;</I><SPAN class="english">I</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                        </TD>
+                                    </TR>
+                                    <TR>
+                                        <TD colspan="4">
+                                            <P align="center">
+                                                <SPAN class="title2">Nasal Sound Auxiliaries</SPAN></P>
+                                        </TD>
+                                    </TR>
+                                    <TR bgcolor="#F5FBEC">
+                                        <TD>
+                                            <P>
+                                                <SPAN class="sinhala">ඬ</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                            <P>
+                                                <SPAN style="font-family: &quot;Iskoola Pota&quot;">හඬ</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                            <P>
+                                                <SPAN class="english"><B>nn</B>da</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                            &nbsp;
+                                        </TD>
+                                    </TR>
+                                    <TR bgcolor="#E8F4D0">
+                                        <TD>
+                                            <P>
+                                                <SPAN class="sinhala">ඳ</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                            <P>
+                                                <SPAN style="font-family: &quot;Iskoola Pota&quot;">හඳ</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                            <P>
+                                                <SPAN class="english"><B>nn</B>dha</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                        </TD>
+                                    </TR>
+                                    <TR bgcolor="#F5FBEC">
+                                        <TD>
+                                            <P>
+                                                <SPAN class="sinhala">ඟ</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                            <P>
+                                                <SPAN style="font-family: &quot;Iskoola Pota&quot;">ගඟ</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                            <P>
+                                                <SPAN class="english"><B>nn</B>ga</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                        </TD>
+                                    </TR>
+                                </TBODY></TABLE>
+                            </TD>
+                            <TD style="width: 20px">
+                            <TD style="width: 370px" valign="top" align="center">
+                                <TABLE border="0" cellspacing="0" cellpadding="0">
+                                    <TBODY><TR>
+                                        <TD colspan="15" bgcolor="#EBEBEB">
+                                            <P align="center">
+                                                <SPAN class="title">Consonants</SPAN></P>
+                                        </TD>
+                                    </TR>
+                                    <TR>
+                                        <TD colspan="6">
+                                            <P align="center">
+                                                <SPAN class="title2">Common</SPAN></P>
+                                        </TD>
+                                        <TD colspan="3">
+                                            <P align="center">
+                                                <SPAN class="title2">Aspirated</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                        <TD colspan="2">
+                                            <P align="center">
+                                                <SPAN class="title2">Special</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                        <TD colspan="2">
+                                            <P align="center">
+                                                <SPAN class="title2">Standalone</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                    </TR>
+                                    <TR>
+                                        <TD bgcolor="#E8F4D0" style="width:35px; height: 19px;">
+                                            <P>
+                                                <SPAN class="sinhala">ක</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E8F4D0" style="width:40px; height: 19px;">
+                                            <P>
+                                                <SPAN class="english">k</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E8F4D0" style="width:35px; height: 19px;">
+                                            <P>
+                                                <SPAN class="sinhala">බ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E8F4D0" style="width:45px; height: 19px;">
+                                            <P>
+                                                <SPAN class="english">b</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E8F4D0" style="width:45px; height: 19px;">
+                                        <TD style="width:20px; height: 19px;">
+                                        <TD bgcolor="#DBFB9F" style="width:35px; height: 19px;">
+                                            <P>
+                                                <SPAN class="sinhala">ඛ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#DBFB9F" style="width:45px; height: 19px;">
+                                            <P>
+                                                <SPAN class="english">kh</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#DBFB9F" style="width:45px; height: 19px;">
+                                            <P>
+                                                <SPAN class="english">K</SPAN></P>
+                                        </TD>
+                                        <TD style="width:20px; height: 19px;"> 
+                                        <TD bgcolor="#E0E2AF" style="width:30px; height: 19px;">
+                                            <P>
+                                                <SPAN class="sinhala">ඹ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E0E2AF" style="width:45px; height: 19px;">
+                                            <P>
+                                                <SPAN class="english">B</SPAN></P>
+                                        </TD>
+                                        <TD style="width:20px; height: 19px;">
+                                        <TD bgcolor="#EBDDB1" style="width:30px; height: 19px;">
+                                            <P>
+                                                <SPAN class="sinhala">ං</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#EBDDB1" style="width:45px; height: 19px;">
+                                            <P>
+                                                <SPAN class="english">\n</SPAN></P>
+                                        </TD>
+                                    </TR>
+                                    <TR>
+                                        <TD bgcolor="#F5FBEC">
+                                            <P>
+                                                <SPAN class="sinhala">ග</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F5FBEC">
+                                            <P>
+                                                <SPAN class="english">g</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F5FBEC">
+                                            <P>
+                                                <SPAN class="sinhala">ම</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F5FBEC">
+                                            <P>
+                                                <SPAN class="english">m</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F5FBEC">
+                                            &nbsp;</TD>
+                                        <TD>
+                                            &nbsp;
+                                        </TD>
+                                        <TD bgcolor="#F4FEE2">
+                                            <P>
+                                                <SPAN class="sinhala">ඝ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F4FEE2" style="width: 45px">
+                                            <P>
+                                                <SPAN class="english">gh</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F4FEE2">
+                                            <P>
+                                                <SPAN class="english">G</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                            &nbsp;</TD>
+                                        <TD bgcolor="#F0F1DA">
+                                            <P>
+                                                <SPAN class="sinhala">ශ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F0F1DA">
+                                            <P>
+                                                <SPAN class="english">S</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                            &nbsp;</TD>
+                                        <TD bgcolor="#F7F0DD">
+                                            <P>
+                                                <SPAN class="sinhala">ඃ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F7F0DD">
+                                            <P>
+                                                <SPAN class="english">\h</SPAN></P>
+                                        </TD>
+                                    </TR>
+                                    <TR>
+                                        <TD height="19" bgcolor="#E8F4D0">
+                                            <P>
+                                                <SPAN class="sinhala">ච</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E8F4D0">
+                                            <P>
+                                                <SPAN class="english">c</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E8F4D0">
+                                            <P>
+                                                <SPAN class="sinhala">ය</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E8F4D0">
+                                            <P>
+                                                <SPAN class="english">y</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E8F4D0">
+                                            &nbsp;</TD>
+                                        <TD>
+                                            &nbsp;
+                                        </TD>
+                                        <TD bgcolor="#DBFB9F">
+                                            <P>
+                                                <SPAN class="sinhala">ඡ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#DBFB9F" style="width: 45px">
+                                            <P>
+                                                <SPAN class="english">ch</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#DBFB9F">
+                                            &nbsp;
+                                        </TD>
+                                        <TD style="width: 16px">
+                                            &nbsp;</TD>
+                                        <TD bgcolor="#E0E2AF">
+                                            <P>
+                                                <SPAN class="sinhala">ෂ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E0E2AF">
+                                            <P>
+                                                <SPAN class="english">sh</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                            &nbsp;</TD>
+                                        <TD bgcolor="#EBDDB1">
+                                            <P>
+                                                <SPAN class="sinhala">ඬ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#EBDDB1">
+                                            <P>
+                                                <SPAN class="english">\N</SPAN></P>
+                                        </TD>
+                                    </TR>
+                                    <TR>
+                                        <TD height="19" bgcolor="#F5FBEC">
+                                            <P>
+                                                <SPAN class="sinhala">ජ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F5FBEC">
+                                            <P>
+                                                <SPAN class="english">j</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F5FBEC">
+                                            <P>
+                                                <SPAN class="sinhala">ර</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F5FBEC">
+                                            <P>
+                                                <SPAN class="english">r</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F5FBEC" style="width: 17px">
+                                            &nbsp;</TD>
+                                        <TD>
+                                            &nbsp;
+                                        </TD>
+                                        <TD bgcolor="#F4FEE2">
+                                            <P>
+                                                <SPAN class="sinhala">ඨ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F4FEE2" style="width: 45px">
+                                            <P><SPAN class="english"></SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F4FEE2">
+                                            <P>
+                                                <SPAN class="english">T</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                        <TD bgcolor="#F0F1DA">
+                                            <P>
+                                                <SPAN class="sinhala">ෆ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F0F1DA">
+                                            <P>
+                                                <SPAN class="english">f</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                            &nbsp;</TD>
+                                        <TD bgcolor="#F7F0DD">
+                                            <P>
+                                                <SPAN class="sinhala">ඍ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F7F0DD">
+                                            <P>
+                                                <SPAN class="english">\R</SPAN></P>
+                                        </TD>
+                                    </TR>
+                                    <TR>
+                                        <TD bgcolor="#E8F4D0">
+                                            <P>
+                                                <SPAN class="sinhala">ට</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E8F4D0">
+                                            <P>
+                                                <SPAN class="english">T</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E8F4D0">
+                                            <P>
+                                                <SPAN class="sinhala">ල</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E8F4D0">
+                                            <P>
+                                                <SPAN class="english">l</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E8F4D0">
+                                            &nbsp;</TD>
+                                        <TD>
+                                            &nbsp;
+                                        </TD>
+                                        <TD bgcolor="#DBFB9F">
+                                            <P>
+                                                <SPAN class="sinhala">ඪ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#DBFB9F" style="width: 45px">
+                                            &nbsp;
+                                        </TD>
+                                        <TD bgcolor="#DBFB9F">
+                                            <P>
+                                                <SPAN class="english">D</SPAN></P>
+                                        </TD>
+                                        <TD style="width: 16px">
+                                            &nbsp;</TD>
+                                        <TD bgcolor="#E0E2AF">
+                                            <P>
+                                                <SPAN class="sinhala">ඥ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E0E2AF">
+                                            <P>
+                                                <SPAN class="english">GN</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                        <TD>
+                                        <TD>
+                                    </TR>
+                                    <TR>
+                                        <TD bgcolor="#F5FBEC">
+                                            <P>
+                                                <SPAN class="sinhala">ඩ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F5FBEC">
+                                            <P>
+                                                <SPAN class="english">d</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F5FBEC">
+                                            <P>
+                                                <SPAN class="sinhala">ව</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F5FBEC">
+                                            <P>
+                                                <SPAN class="english">w</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F5FBEC">
+                                            <SPAN class="english">v</SPAN></TD>
+                                        <TD>
+                                        <TD bgcolor="#F4FEE2">
+                                            <P>
+                                                <SPAN class="sinhala">ථ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F4FEE2" style="width: 45px">
+                                            <P>
+                                                <SPAN class="english">th</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F4FEE2">
+                                        <TD>
+                                            &nbsp;</TD>
+                                        <TD bgcolor="#F0F1DA">
+                                            <P>
+                                                <SPAN class="sinhala">ඤ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F0F1DA">
+                                            <P>
+                                                <SPAN class="english">KN</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                        <TD>
+                                        <TD>
+                                    </TR>
+                                    <TR>
+                                        <TD bgcolor="#E8F4D0">
+                                            <P>
+                                                <SPAN class="sinhala">ත</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E8F4D0">
+                                            <P>
+                                                <SPAN class="english">t</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E8F4D0">
+                                            <P>
+                                                <SPAN class="sinhala">ස</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E8F4D0">
+                                            <P>
+                                                <SPAN class="english">s</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E8F4D0">
+                                            &nbsp;</TD>
+                                        <TD>
+                                            &nbsp;
+                                        </TD>
+                                        <TD bgcolor="#DBFB9F">
+                                            <P>
+                                                <SPAN class="sinhala">ධ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#DBFB9F" style="width: 45px">
+                                            <P>
+                                                <SPAN class="english">dh</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#DBFB9F">
+                                            &nbsp;
+                                        </TD>
+                                        <TD>
+                                        <TD bgcolor="#E0E2AF">
+                                            <P>
+                                                <SPAN class="sinhala">ඣ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E0E2AF">
+                                            <P>
+                                                <SPAN class="english">jh</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                        <TD>
+                                        <TD>
+                                    </TR>
+                                    <TR>
+                                        <TD bgcolor="#F5FBEC" style="height: 19px">
+                                            <P>
+                                                <SPAN class="sinhala">ද</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F5FBEC" style="height: 19px">
+                                            <P>
+                                                <SPAN class="english">dh</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F5FBEC" style="height: 19px">
+                                            <P>
+                                                <SPAN class="sinhala">හ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F5FBEC" style="height: 19px">
+                                            <P>
+                                                <SPAN class="english">h</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F5FBEC" style="height: 19px">
+                                        <TD style="height: 19px">
+                                        <TD bgcolor="#F4FEE2" style="height: 19px">
+                                            <P>
+                                                <SPAN class="sinhala">ඵ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F4FEE2" style="width: 45px; height: 19px;">
+                                            <P>
+                                                <SPAN class="english">ph</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F4FEE2" style="height: 19px">
+                                            <P>
+                                                <SPAN class="english">P</SPAN></P>
+                                        </TD>
+                                        <TD style="height: 19px">
+                                        <TD bgcolor="#F0F1DA" style="height: 19px">
+                                            <P>
+                                                <SPAN class="sinhala">ළු</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F0F1DA" style="height: 19px">
+                                            <P>
+                                                <SPAN class="english">Lu</SPAN></P>
+                                        </TD>
+                                        <TD style="height: 19px">
+                                        <TD style="height: 19px">
+                                        <TD style="height: 19px">
+                                    </TR>
+                                    <TR>
+                                        <TD bgcolor="#E8F4D0">
+                                            <P>
+                                                <SPAN class="sinhala">න</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E8F4D0">
+                                            <P>
+                                                <SPAN class="english">n</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E8F4D0">
+                                            <P>
+                                                <SPAN class="sinhala">ණ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E8F4D0">
+                                            <P>
+                                                <SPAN class="english">N</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E8F4D0">
+                                        <TD>
+                                        <TD bgcolor="#DBFB9F">
+                                            <P>
+                                                <SPAN class="sinhala">භ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#DBFB9F" style="width: 45px">
+                                            <P>
+                                                <SPAN class="english">bh</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#DBFB9F">
+                                        <TD>
+                                        <TD bgcolor="#E0E2AF" style="height: 19px">
+                                            <P>
+                                                <SPAN class="sinhala">ළූ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#E0E2AF">
+                                            <P>
+                                                <SPAN class="english">Luu</SPAN></P>
+                                        </TD>
+                                        <TD>
+                                        <TD>
+                                        <TD>
+                                    </TR>
+                                    <TR>
+                                        <TD bgcolor="#F5FBEC">
+                                            <P>
+                                                <SPAN class="sinhala">ප</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F5FBEC">
+                                            <P>
+                                                <SPAN class="english">p</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F5FBEC">
+                                            <P>
+                                                <SPAN class="sinhala">ළ</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F5FBEC">
+                                            <P>
+                                                <SPAN class="english">L</SPAN></P>
+                                        </TD>
+                                        <TD bgcolor="#F5FBEC">
+                                        <TD>
+                                        <TD>
+                                        <TD style="width: 45px">
+                                        <TD>
+                                        <TD>
+                                        <TD>
+                                        <TD>
+                                        <TD>
+                                        <TD>
+                                        <TD>
+                                    </TR>
+                                </TBODY></TABLE>
+                            </TD>
+                        </TR>
+                        <TR><TD colspan="5" style="height:10px;"></TR>
+                        <TR>
+                            <TD colspan="5">
+                                <CENTER>
+                                    <TABLE cellspacing="0" cellpadding="0">
+                                        <TBODY><TR>
+                                            <TD colspan="13" bgcolor="#EBEBEB">
+                                                <P align="center">
+                                                    <SPAN style="color: navy; font-family: Arial"><STRONG>Deriving Consonants</STRONG></SPAN></P>
+                                            </TD>
+                                        </TR>
+                                        <TR bgcolor="#FCFFB7">
+                                            <TD style="width: 62px;">
+                                                <P>
+                                                    <SPAN class="sinhala">ක්</SPAN></P>
+                                            </TD>
+                                            <TD style="width: 62px;">
+                                                <P>
+                                                    <SPAN class="sinhala">ක</SPAN></P>
+                                            </TD>
+                                            <TD style="width: 62px;">
+                                                <P>
+                                                    <SPAN class="sinhala">කා</SPAN></P>
+                                            </TD>
+                                            <TD style="width: 62px;">
+                                                <P>
+                                                    <SPAN class="sinhala">කැ</SPAN></P>
+                                            </TD>
+                                            <TD style="width: 62px;">
+                                                <P>
+                                                    <SPAN class="sinhala">කෑ</SPAN></P>
+                                            </TD>
+                                            <TD style="width: 62px;">
+                                                <P>
+                                                    <SPAN class="sinhala">කි</SPAN></P>
+                                            </TD>
+                                            <TD style="width: 62px;">
+                                                <P>
+                                                    <SPAN class="sinhala">කී</SPAN></P>
+                                            </TD>
+                                            <TD style="width: 62px;">
+                                                <P>
+                                                    <SPAN class="sinhala">කු</SPAN></P>
+                                            </TD>
+                                            <TD style="width: 62px;">
+                                                <P>
+                                                    <SPAN class="sinhala">කූ</SPAN></P>
+                                            </TD>
+                                            <TD style="width: 62px;">
+                                                <P>
+                                                    <SPAN class="sinhala">කෙ</SPAN></P>
+                                            </TD>
+                                            <TD style="width:62px">
+                                                <P>
+                                                    <SPAN class="sinhala">කේ</SPAN></P>
+                                            </TD>
+                                            <TD style="width:62px;">
+                                                <P>
+                                                    <SPAN class="sinhala">කො</SPAN></P>
+                                            </TD>
+                                            <TD style="width: 62px;">
+                                                <P>
+                                                    <SPAN class="sinhala">කෝ</SPAN></P>
+                                            </TD>
+                                        </TR>
+                                        <TR bgcolor="#FEFFDF">
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="english">k</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="english">ka</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="english">kaa</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="english">kA</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="english">kAa</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="english">ki</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="english">kie</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="english">ku</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="english">kuu</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="english">ke</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="english">kei</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="english">ko</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="english">koe</SPAN></P>
+                                            </TD>
+                                        </TR>
+                                        <TR bgcolor="#FCFFB7">
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="sinhala">කෞ</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="sinhala">ක්‍ර</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="sinhala">ක්‍රා</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="sinhala">ක්‍රැ</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="sinhala">ක්‍රෑ</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="sinhala">ක්‍රි</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="sinhala">ක්‍රී</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="sinhala">කෘ</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="sinhala">කෲ</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="sinhala">ක්‍රෙ</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="sinhala">ක්‍රේ</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="sinhala">ක්‍රො</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="sinhala">ක්‍රෝ</SPAN></P>
+                                            </TD>
+                                        </TR>
+                                        <TR bgcolor="#FEFFDF">
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="english">kau</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="english">kra</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="english">kraa</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="english">krA</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="english">krAa</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="english">kri</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="english">krie</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="english">kru</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="english">kruu</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="english">kre</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="english">krei</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="english">kro</SPAN></P>
+                                            </TD>
+                                            <TD>
+                                                <P>
+                                                    <SPAN class="english">kroe</SPAN></P>
+                                            </TD>
+                                        </TR>
+                                    </TBODY></TABLE>
+                                </CENTER>
+                            </TD>
+                        </TR>
+                        <TR><TD colspan="5" style="height:10px;"></TR>
+                    </TBODY></TABLE>
+    </DIV>
+    
+
+</BODY></HTML>
