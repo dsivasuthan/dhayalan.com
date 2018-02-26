@@ -60,14 +60,15 @@ These projects are done in my free time and most of them are as old as 15 years.
 
 ## Old Stuff:
 
-### [my old homepage](/projects/old_stuff/Home.htm)
+### [my old homepage](/projects/old_stuff/HTML.htm)
+* This links to an old "website" I had built about 15 years ago
 
 ### Stuff I modified from other sites:
 
-[Onscreen Keyboards for Tamil and Sinhala](/projects/kbconverters/kbconverters.htm)
+* [Onscreen Keyboards for Tamil and Sinhala](/projects/kbconverters/kbconverters.htm)
 
 
 
-
+___
 
 ** UNDER CONSTRUCTION – more on the way

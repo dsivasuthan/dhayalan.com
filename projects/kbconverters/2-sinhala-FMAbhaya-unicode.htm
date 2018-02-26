@@ -2,18 +2,18 @@
 <!-- saved from url=(0069)http://www.ucsc.cmb.ac.lk/ltrl/services/feconverter/?maps=s_fma-u.xml -->
 <HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	  <TITLE>Real Time Unicode Converter</TITLE>
-	  
+	  <meta name=viewport content="width=device-width">
 	  <LINK rel="Stylesheet" href="./03 Real Time Unicode Converter_files/main.css">
 	  	  <STYLE type="text/css">
 		@font-face { font-family:Potha; src:url(eot/POTHA0.eot);@font-face { font-family:FMAbhaya\ x; src:url(eot/FMABHAY0.eot);		</STYLE>
 	</HEAD><BODY onload="javascript:txtBox.box1.focus()">
-	  
+
 	<SCRIPT language="javascript" type="text/javascript">
 	var text;
-	
+
 	function startText() {
-		text = document.txtBox.box1.value;  
-	
+		text = document.txtBox.box1.value;
+
 		text = text.replace(/'/g, "Ã");
 text = text.replace(/"/g, "»");
 text = text.replace(/›/g, "ශ්‍රී");
@@ -563,10 +563,10 @@ text = text.replace(/º/g, "X");
 text = text.replace(/¹/g, "V");
 text = text.replace(/Ã/g, ".");
 text = text.replace(/»/g, ",");
-		
+
 		document.txtBox.box2.value=text;
 	}
-	
+
 	function copyit(theField) {
 		var tempval=eval("document."+theField)
 		tempval.focus()
@@ -575,7 +575,7 @@ text = text.replace(/»/g, ",");
 		therange.execCommand("Copy")
 	}
 	</SCRIPT>
-	
+
 	<CENTER>
 	<TABLE width="600">
 	  <TBODY>
@@ -600,25 +600,15 @@ text = text.replace(/»/g, ",");
 				<INPUT style="left: 500px; width: 100px; position: relative" onclick="copyit(&#39;txtBox.box2&#39;)" type="button" value="Copy">
 			  </FORM>
 			<HR>
-			<CENTER>
-			  <SPAN class="p">
-				© 2006 Language Technology Research Laboratory - University of Colombo
-				School of Computing
-			  </SPAN>
-			  <BR>
-			  <SPAN class="p" style="color: red">
-				Best viewed with Internet Explorer 5.x or higher
-				in 1024 x 768 resolution.
-			  </SPAN>
-			</CENTER>
+
 		  </TD>
 		</TR>
 	  </TBODY>
 	</TABLE>
 	</CENTER>
-	
-	
-	
+
+
+
 
 
 </BODY></HTML>

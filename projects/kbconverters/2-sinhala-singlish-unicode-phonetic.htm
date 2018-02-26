@@ -2,7 +2,7 @@
 <!-- saved from url=(0059)http://www.ucsc.cmb.ac.lk/ltrl/services/feconverter/t2.html -->
 <HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <TITLE>Real Time Unicode Converter</TITLE>
-    
+    <meta name=viewport content="width=device-width">
     <LINK rel="stylesheet" href="./04 Real Time Unicode Converter_files/main.css">
     <STYLE type="text/css">
         @font-face {
@@ -69,7 +69,7 @@ var specialChar= new Array()
     vowelsUni[16]='ඌ';    vowels[16]='u\\)';    vowelModifiersUni[16]='ූ';
     vowelsUni[17]='ඖ';    vowels[17]='au';    vowelModifiersUni[17]='ෞ';
     vowelsUni[18]='ඇ';    vowels[18]='/\a';    vowelModifiersUni[18]='ැ';
-    
+
     vowelsUni[19]='අ';    vowels[19]='a';    vowelModifiersUni[19]='';
     vowelsUni[20]='ඇ';    vowels[20]='A';    vowelModifiersUni[20]='ැ';
     vowelsUni[21]='ඉ';    vowels[21]='i';    vowelModifiersUni[21]='ි';
@@ -86,7 +86,7 @@ var specialChar= new Array()
     //special characher Repaya
     specialConsonantsUni[4]='ර්'+'\u200D'; specialConsonants[4]=/R/g;
     specialConsonantsUni[5]='ර්'+'\u200D'; specialConsonants[5]=/\\r/g;
-    
+
     consonantsUni[0]='ඬ'; consonants[0]='nnd';
     consonantsUni[1]='ඳ'; consonants[1]='nndh';
     consonantsUni[2]='ඟ'; consonants[2]='nng';
@@ -104,7 +104,7 @@ var specialChar= new Array()
     consonantsUni[14]='ඛ'; consonants[14]='kh';
     consonantsUni[15]='ඨ'; consonants[15]='Th';
     consonantsUni[16]='ඪ'; consonants[16]='Dh';
-    
+
     consonantsUni[17]='ශ'; consonants[17]='S';
     consonantsUni[18]='ද'; consonants[18]='d';
     consonantsUni[19]='ච'; consonants[19]='c';
@@ -134,8 +134,8 @@ var specialChar= new Array()
     consonantsUni[43]='ෆ'; consonants[43]='f';
     consonantsUni[44]='ග'; consonants[44]='g';
     //last because we need to ommit this in dealing with Rakaransha
-    consonantsUni[45]='ර'; consonants[45]='r'; 
-    
+    consonantsUni[45]='ර'; consonants[45]='r';
+
     specialCharUni[0]='ෲ'; specialChar[0]='ruu';
     specialCharUni[1]='ෘ'; specialChar[1]='ru';
     //specialCharUni[2]='්‍ර'; specialChar[2]='ra';
@@ -143,12 +143,12 @@ var specialChar= new Array()
 
 function startText() {
     var s,r,v;
-    text = document.txtBox.box1.value;  
-      
+    text = document.txtBox.box1.value;
+
     //special consonents
     for (var i=0; i<specialConsonants.length; i++)
         text = text.replace(specialConsonants[i], specialConsonantsUni[i]);
-   
+
     //consonents + special Chars
     for (var i=0; i<specialCharUni.length; i++){
         for (var j=0;j<consonants.length;j++){
@@ -173,7 +173,7 @@ function startText() {
     }
     //consonents + vowel modifiers
     for (var i=0;i<consonants.length;i++){
-        for (var j=0;j<nVowels;j++){ 
+        for (var j=0;j<nVowels;j++){
             s = consonants[i]+vowels[j];
             v = consonantsUni[i] + vowelModifiersUni[j];
             r = new RegExp(s,"g");
@@ -186,7 +186,7 @@ function startText() {
         r = new RegExp(consonants[i],"g");
         text = text.replace(r, consonantsUni[i]+"්");
     }
-        
+
     //vowels
     for (var i=0; i<vowels.length; i++){
         r = new RegExp(vowels[i],"g");
@@ -735,7 +735,7 @@ function changeVisibility(){
                                             <P>
                                                 <SPAN class="english">K</SPAN></P>
                                         </TD>
-                                        <TD style="width:20px; height: 19px;"> 
+                                        <TD style="width:20px; height: 19px;">
                                         <TD bgcolor="#E0E2AF" style="width:30px; height: 19px;">
                                             <P>
                                                 <SPAN class="sinhala">ඹ</SPAN></P>
@@ -1403,6 +1403,6 @@ function changeVisibility(){
                         <TR><TD colspan="5" style="height:10px;"></TR>
                     </TBODY></TABLE>
     </DIV>
-    
+
 
 </BODY></HTML>
