@@ -17,6 +17,7 @@ html {
 body {
 	margin: auto;
 	max-width: 800px;
+  padding: 40px;
 }
 h1 {
 	font-weight: 700;
