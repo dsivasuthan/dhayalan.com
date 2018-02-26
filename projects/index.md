@@ -23,47 +23,47 @@ These projects are done in my free time and most of them are as old as 15 years.
 * I got tired of feature-rich and slow note-taking apps that require whole bunch of permissions to run. So, I made my own simple app to draw and save hand-drawn notes. The only permission it requires is the access to Storage to save the created note. Not even a permission to connect to Internet is required, and it loads super fast.
 
 
-## Chrome Extensions:
+### Chrome Extensions:
 
-### [Chrome Sound Effects](https://chrome.google.com/webstore/detail/chrome-sound-effects/oekengelpdnkfopdkkphkmaacfanbnla?utm_source=chrome-ntp-icon)
+#### [Chrome Sound Effects](https://chrome.google.com/webstore/detail/chrome-sound-effects/oekengelpdnkfopdkkphkmaacfanbnla?utm_source=chrome-ntp-icon)
 * Add sounds to events triggered by user in Chrome, like switching tabs, etc. They can be manually disabled.
 
-### [Change all UI fonts](https://chrome.google.com/webstore/detail/change-all-ui-fonts/loiejdbcheeiipmakhghinclmpafiiel?utm_source=chrome-ntp-icon)
+#### [Change all UI fonts](https://chrome.google.com/webstore/detail/change-all-ui-fonts/loiejdbcheeiipmakhghinclmpafiiel?utm_source=chrome-ntp-icon)
 * Changes all the font-faces on all the web sites to a user given local font. Enter your desired font in the options by clicking the extension icon.
 
 
-## Simple Windows/Web Applications:
+### Simple Windows/Web Applications:
 
-### [Weather app](https://progressive-web-apps-736ed.firebaseapp.com/)
+#### [Weather app](https://progressive-web-apps-736ed.firebaseapp.com/)
 * Made this on a Google Developer workshop called Progressive Web Apps. I used Service workers to do the updates and show cache data while offline.
 
-### [Google Search Widget](/projects/win/google-search.exe)
+#### [Google Search Widget](/projects/win/google-search.exe)
 * Type text and hit enter to search that text.
 
-### [Oscar Winner Finder](#)
+#### [Oscar Winner Finder](#)
 * Used PHP and MySQL to implement a simple search function to retrieve the title, year and Rotten Tomatoes score of the Academic Award-winning feature films.
 
 
-## School Projects:
+### School Projects:
 
-### [lifelens](http://sivasuthan.com/lifelens/)
+#### [lifelens](http://sivasuthan.com/lifelens/)
 * A simple photo curation web service. What is special about this service is that it’s designed to present user photos in a Timeline view. The algorithm extracts EXIF data from the uploaded photos and creates the Timeline by itself without user interaction. Just view one example.
 
-### [chatter](http://www2.scs.ryerson.ca/~sdhayala/cgi-bin/project/)
+#### [chatter](http://www2.scs.ryerson.ca/~sdhayala/cgi-bin/project/)
 * A Twitter-like public chat engine, very simple implementation using Perl and php.
 
 
-## Preserving Golden Treasures:
+### Preserving Golden Treasures:
 
-### [Thirukural (திருக்குறள்)](https://github.com/dsivasuthan/thirukurals)
+#### [Thirukural (திருக்குறள்)](https://github.com/dsivasuthan/thirukurals)
 * Thiruvalluvar wrote this classic Tamil sangam literature, consisting of 1330 couplets or Kurals, sometime between the third and first centuries BCE. I came across this compilation some time ago and made a copy/backup for myself. Thanks to all those who help compile this timeless piece of writing.
 
-## Old Stuff:
+### Old Stuff:
 
-### [my old homepage](/projects/old_stuff/HTML.htm)
+#### [my old homepage](/projects/old_stuff/HTML.htm)
 * This links to an old "website" I had built about 15 years ago
 
-### Stuff I modified from other sites:
+#### Stuff I modified from other sites:
 
 * [Onscreen Keyboards for Tamil and Sinhala](/projects/kbconverters/kbconverters.htm)
 
