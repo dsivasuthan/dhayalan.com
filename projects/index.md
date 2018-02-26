@@ -40,7 +40,7 @@ These projects are done in my free time and most of them are as old as 15 years.
 ### [Google Search Widget](/projects/win/google-search.exe)
 * Type text and hit enter to search that text.
 
-### [Oscar Winner Finder](/projects/dbs/1/)
+### [Oscar Winner Finder](#)
 * Used PHP and MySQL to implement a simple search function to retrieve the title, year and Rotten Tomatoes score of the Academic Award-winning feature films.
 
 
