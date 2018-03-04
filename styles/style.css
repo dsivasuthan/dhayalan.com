@@ -1,54 +1,76 @@
 @font-face {
-  font-family: 'Share Tech Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Share Tech Mono'), local('ShareTechMono-Regular'), url(https://fonts.gstatic.com/s/sharetechmono/v6/RQxK-3RA0Lnf3gnnnNrAsVlgUn8GogvcKKzoM9Dh-4E.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+    font-family: 'Share Tech Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Share Tech Mono'), local('ShareTechMono-Regular'), url(https://fonts.gstatic.com/s/sharetechmono/v6/RQxK-3RA0Lnf3gnnnNrAsVlgUn8GogvcKKzoM9Dh-4E.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
+
 * {
-	font-family: 'Share Tech Mono', monospace!important;
-  font-weight: lighter;
+    font-family: 'Share Tech Mono', monospace!important;
+    font-weight: lighter;
 }
+
 html {
-	background-color: #222222;
-	color: #ffffff;
-	text-align: left;
+    background-color: #222222;
+    color: #ffffff;
+    text-align: left;
 }
+
 body {
-	margin: auto;
-	max-width: 800px;
-  padding: 40px;
+    margin: auto;
+    max-width: 800px;
+    padding: 40px;
 }
+
 h1 {
-	font-weight: 700;
-	margin: 100px 0 0 0;
+    font-weight: 700;
+    margin: 100px 0 0 0;
 }
+
 h2 {
-	margin: 70px 0 0 0;
+    margin: 70px 0 0 0;
+    /* text-indent: 10px; */
 }
-* > a {
-  color:#fff;
+
+h3 {
+  text-indent: 10px;
 }
+
+h4 {
+  text-indent: 20px;
+}
+
+*>a {
+    color: #fff;
+}
+
 p, li {
-	text-align: left;
-  color:#aaa;
+    text-align: left;
+    color: #aaa;
 }
+
 a:hover {
-	opacity:0.7;
-  text-decoration: none;
+    opacity: 0.7;
+    text-decoration: none;
 }
+
 a {
-	text-decoration: underline;
-	outline: 0;
-	transition: all 0.5s ease;
+    text-decoration: underline;
+    outline: 0;
+    transition: all 0.5s ease;
 }
+
 a img, svg {
-	margin: 45px 8px 10px 8px;
-	width: 64px;
+    margin: 45px 8px 10px 8px;
+    width: 64px;
 }
+
 pre {
-	white-space: pre-wrap;
+    white-space: pre-wrap;
 }
+
 ul {
-  list-style-type: none;
+    list-style-type: none;
+    margin: 0 0 50px 0;
 }
