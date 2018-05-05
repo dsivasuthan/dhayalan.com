@@ -1,0 +1,24 @@
+<!DOCTYPE html><html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+	<meta name="keywords" content="Tamil Phonetic Keyboard, Virtual, Keyboard, Type in, Script," />
+	<meta name="description" content="This page will allow you type in Tamil Phonetic script in case you are not able to use your main keyboard in this language ." />
+	<title>Tamil Phonetic Keyboard</title>
+	<script type="text/javascript" src="https://www.google.com/jsapi?key=ABQIAAAA1shzMbB68tKmVYtlEvxophR3XPuax6588beMf7ljLyU2XHTjmxRYQQJH0SqxG0X2uWOjRsedlEn2VQ"></script>
+	<script type="text/javascript">
+		google.load("elements", "1", {
+			packages: "keyboard"
+		});
+
+		function onLoad() {
+			var kbd = new google.elements.keyboard.Keyboard(
+				[google.elements.keyboard.LayoutCode.TAMIL_PHONETIC], ['t1']);
+		}
+		google.setOnLoadCallback(onLoad);
+	</script>
+</head>
+<body>
+	<textarea id="t1" style="font-size:2em;width: 600px; height: 200px;"></textarea>
+</body></html>
