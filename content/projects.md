@@ -1,9 +1,9 @@
-projects
+projects - ssss
 ======
 
 These projects are done in my free time and most of them are as old as 15 years. Work projects are not listed here, but they showcase my skills better than any of these projects do. Contact me if you want to know about my work projects. Thank you.
 
-## Some work projects:
+
 
 ### [Ryerson United Way](https://www.ryerson.ca/unitedway/)
 * Built on CQ5. One of the projects that I am very proud of because of what it stands for.
@@ -15,7 +15,7 @@ These projects are done in my free time and most of them are as old as 15 years.
 * Since my specialty is on backend development, I have a made a lot of Admin panels, used solely for company operations. Please ask me for more details.
 
 
-## Non-work projects:
+
 
 ### Android Applications:
 
