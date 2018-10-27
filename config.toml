@@ -1,74 +1,57 @@
-baseurl = "https://dhayalan.com" # Hostname (and path) to the root.
-title = "Siva Dhayalan" # Site title.
-theme = "coder-portfolio" # Set the theme.
-languagecode = "en" # The site’s language code used to generate RSS.
-defaultcontentlanguage = "en" # The default content language.
+baseurl = "https://example.com/"
+theme = "cocoa-eh"
+builddrafts = true
+canonifyurls = true
+contentdir = "content"
+languageCode = "en-US"
+layoutdir = "layouts"
+publishdir = "public"
+author = "Alexis Tacnet"
+title = "Cocoa Enhanced"
+disqusshortname = ""
+pluralizelisttitles = false
 
-paginate = 20 # Default number of pages per page in pagination.
+[permalinks]
+blog = "blog/:slug/"
 
-pygmentsstyle = "b2" # Color-theme or style for syntax highlighting.
-pygmentscodefences = true # Enable code fence background highlighting.
-pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences without specified language.
-pygmentsUseClasses = true # new add
+[params]
+dateform = "Jan 2, 2006"
+dateformfull = "Mon Jan 2 2006 15:04:05 MST"
+description = "Example blog"
+#copyright = "Copyright © 2015 Nishanth Shanmugham"
+# copyrightUrl = "https://creativecommons.org/licenses/by-sa/4.0/"
+#logofile = "img/logo.png"
+faviconfile = "img/logo.png"
+highlightjs = true
+progressively = true
+share = true
+# Share to googleplus, twitter, fb, linkedin by default
+# disable by setting share_on_<social network> = false
+# example: share_on_googleplus = false
+latestpostcount = 5
+github = "example"
+email = "you@example.com"
+linkedin = "john-example-aa80ue8è"
+twitter = "example"
+facebook = "facebook_id"
+instagram = "instagram_id"
+itch_io = "itch_io_id"
+social_banner = "img/banner.png"
+usesmallsummarycard = true
+posts_navigation = true
+# issoHost = "comments.domain.tld:1234"
+# githubRepo = "githubUsername/repositoryName/tree/master"
+small_banner_logo = false
 
-#disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
-
-[params] # theme parameters
-    author = "Siva Dhayalan" # Author's name.
-    info = "Full Stack Web Developer" # Author's job title or info.
-    description = "Siva Dhayalan's personal website" # Site description.
-    keywords = "blog,developer,personal" # Site keywords.
-    #avatarurl = "images/avatar.jpg" # Contain the path of the optionnal avatar in the static folder.
-
-    #footercontent = "Enter a text here." # Add footer content
-    fixedbarContent = "Do you want to know me more private?→" # Add fixedbar content
-    fixedbarContentAfter = "Thank You! Please share it if you like it→" # Add fixedbar content after click
-
-    # Whether you want to hide copyright and credits in the footer.
-    hideCredits = true
-    hideCopyright = true
-
-    # Custom CSS
-    custom_css = []
-
-    # Alignment of Mobile Menu items
-    itemscentered = true
-
-    # RTL support
-    rtl = false
-
-    snsShare = false # new add
-
-    #thumbnail = "images/tn.png" # default sns thumbnail
-
-    # Multilanguage mode
-    langseparator = "|" # Separates menus from language selectors when site is multilingual.
-
-# Social links
-[[params.social]]
-    name = "Github"
-    weight = 1
-    url = "https://github.com/dsivasuthan/"
-[[params.social]]
-    name = "Instagram"
-    weight = 2
-    url = "https://instagram.com/sdhayalan/"
-[[params.social]]
-    name = "LinkedIn"
-    weight = 3
-    url = "https://www.linkedin.com/in/dsivasuthan/"
-
-# Menu links
-[[menu.main]]
-    name = "Blog"
-    weight = 1
-    url  = "posts"
-[[menu.main]]
-    name = "About"
-    weight = 2
-    url = "about"
-
-[[menu.main]]
-    name = "Projects"
-    weight = 3
-    url = "projects"
+[params.colors]
+identifier = "#527fc1f"
+identifier_dark = "#1a3152"
+trivial = "#6a7a8b"
+foreground = "#181d2a"
+background = "#f9f9f9"
+background_dark = "#282a36"
+code = "#87a5d2"
+type = "#97d28b"
+special = "#ffcb8d"
+value = "#96c2d7"
+statement = "#ff8e91"
