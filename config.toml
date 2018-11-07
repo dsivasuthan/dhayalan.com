@@ -1,4 +1,4 @@
-baseurl = "https://example.com/"
+baseurl = "https://dhayalan.com/"
 theme = "cocoa-eh"
 builddrafts = true
 canonifyurls = true
@@ -42,6 +42,7 @@ posts_navigation = true
 # issoHost = "comments.domain.tld:1234"
 # githubRepo = "githubUsername/repositoryName/tree/master"
 small_banner_logo = false
+align_left = true
 
 [params.colors]
 identifier = "#527fc1f"

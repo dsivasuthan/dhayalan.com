@@ -3,7 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://dhayalan.com/</loc>
+    <loc>https://dhayalan.com/blog/setting-up-linux-for-web-development/</loc>
+    <lastmod>2018-11-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dhayalan.com/projects/</loc>
+    <lastmod>2015-08-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dhayalan.com/blog/</loc>
+    <lastmod>2018-11-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -12,7 +24,12 @@
   </url>
   
   <url>
+    <loc>https://dhayalan.com/home/</loc>
+  </url>
+  
+  <url>
     <loc>https://dhayalan.com/</loc>
+    <lastmod>2018-11-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

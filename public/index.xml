@@ -5,18 +5,40 @@
     <link>https://dhayalan.com/</link>
     <description>Recent content on Siva Dhayalan</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 07 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dhayalan.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title></title>
-      <link>https://dhayalan.com/</link>
+      <title>Setting up Linux for Web Development</title>
+      <link>https://dhayalan.com/blog/setting-up-linux-for-web-development/</link>
+      <pubDate>Wed, 07 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://dhayalan.com/blog/setting-up-linux-for-web-development/</guid>
+      <description>I have been using Windows for the last 15 years. I have always used Linux on the side for fun and tinkering but never tried it full time until a couple of years ago. I have been trying various distros for a while now, switching between Ubuntu Unity, Linux Cinamon, Manjaro, until I tried Kubuntu with KDE plasma. The sheer amount of cuztomizations right out of the box and support for HiDPI screen for Lenovo Yoga 2 Pro meant I could stick to this for a while.</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://dhayalan.com/projects/</link>
+      <pubDate>Sat, 22 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://dhayalan.com/projects/</guid>
+      <description>These projects are done in my free time and most of them are as old as 15 years. Work projects are not listed here, but they showcase my skills better than any of these projects do. Contact me if you want to know about my work projects. Thank you.
+Some work projects: Ryerson United Way  Built on CQ5. One of the projects that I am very proud of because of what it stands for.</description>
+    </item>
+    
+    <item>
+      <title>Home</title>
+      <link>https://dhayalan.com/home/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dhayalan.com/</guid>
-      <description>Hi there</description>
+      <guid>https://dhayalan.com/home/</guid>
+      <description>Hi there, I am Siva.
+I am a Ryerson University graduate, currently working as a Full Stack Web Developer in Toronto. I&amp;rsquo;m also a coffee-lover, environmentalist, minimalist, novice photographer and a self-proclaimed car racer, among other things.
+Check out my projects or my photos.</description>
     </item>
     
   </channel>

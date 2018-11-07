@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Siva Dhayalan</title>
+    <link>https://dhayalan.com/blog/</link>
+    <description>Recent content in Blog on Siva Dhayalan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 07 Nov 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://dhayalan.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setting up Linux for Web Development</title>
+      <link>https://dhayalan.com/blog/setting-up-linux-for-web-development/</link>
+      <pubDate>Wed, 07 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://dhayalan.com/blog/setting-up-linux-for-web-development/</guid>
+      <description>I have been using Windows for the last 15 years. I have always used Linux on the side for fun and tinkering but never tried it full time until a couple of years ago. I have been trying various distros for a while now, switching between Ubuntu Unity, Linux Cinamon, Manjaro, until I tried Kubuntu with KDE plasma. The sheer amount of cuztomizations right out of the box and support for HiDPI screen for Lenovo Yoga 2 Pro meant I could stick to this for a while.</description>
+    </item>
+    
+  </channel>
+</rss>
