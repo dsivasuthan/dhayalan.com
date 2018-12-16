@@ -5,57 +5,23 @@ title = "Projects"
 
 These projects are done in my free time and most of them are as old as 15 years. Work projects are not listed here, but they showcase my skills better than any of these projects do. Contact me if you want to know about my work projects. Thank you.
 
-## Some work projects:
-
-### [Ryerson United Way](https://www.ryerson.ca/unitedway/)
-* Built on CQ5. One of the projects that I am very proud of because of what it stands for.
-
-### [Ozawa](https://ozawa.ca/products/)
-* Built a clean products section using Woocommerce platform on top WordPress.
-
-### Company admin panels
-* Since my specialty is on backend development, I have a made a lot of Admin panels, used solely for company operations. Please ask me for more details.
-
-
-## Non-work projects:
-
-### Android Applications:
-
-#### [Simple Sketch](https://play.google.com/store/apps/details?id=com.sivasuthan.simplesketch)
+#### [Simple Sketch](https://play.google.com/store/apps/details?id=com.sivasuthan.simplesketch) - Android Application
 * I got tired of feature-rich and slow note-taking apps that require whole bunch of permissions to run. So, I made my own simple app to draw and save hand-drawn notes. The only permission it requires is the access to Storage to save the created note. Not even a permission to connect to Internet is required, and it loads super fast.
 
-
-### Chrome Extensions:
-
-#### [Chrome Sound Effects](https://chrome.google.com/webstore/detail/chrome-sound-effects/oekengelpdnkfopdkkphkmaacfanbnla?utm_source=chrome-ntp-icon)
+#### [Chrome Sound Effects](https://chrome.google.com/webstore/detail/chrome-sound-effects/oekengelpdnkfopdkkphkmaacfanbnla?utm_source=chrome-ntp-icon) - Chrome extension
 * Add sounds to events triggered by user in Chrome, like switching tabs, etc. They can be manually disabled.
 
-#### [Change all UI fonts](https://chrome.google.com/webstore/detail/change-all-ui-fonts/loiejdbcheeiipmakhghinclmpafiiel?utm_source=chrome-ntp-icon)
+#### [Change all UI fonts](https://chrome.google.com/webstore/detail/change-all-ui-fonts/loiejdbcheeiipmakhghinclmpafiiel?utm_source=chrome-ntp-icon) - Chrome extension
 * Changes all the font-faces on all the web sites to a user given local font. Enter your desired font in the options by clicking the extension icon.
 
-
-### Simple Windows/Web Applications:
-
-#### [Weather app](https://progressive-web-apps-736ed.firebaseapp.com/)
+#### [Weather app](https://progressive-web-apps-736ed.firebaseapp.com/) - Progressive Web App
 * Made this on a Google Developer workshop called Progressive Web Apps. I used Service workers to do the updates and show cache data while offline.
 
-#### [Google Search Widget](/projects/win/google-search.exe)
+#### [Google Search Widget](/projects/win/google-search.exe) - Native Windows Application
 * Type text and hit enter to search that text.
 
-#### [Oscar Winner Finder](#)
+#### [Oscar Winner Finder](#) - Simple PHP App (too simple to link)
 * Used PHP and MySQL to implement a simple search function to retrieve the title, year and Rotten Tomatoes score of the Academic Award-winning feature films.
-
-
-### School Projects:
-
-#### [lifelens](http://sivasuthan.com/lifelens/)
-* A simple photo curation web service. What is special about this service is that it’s designed to present user photos in a Timeline view. The algorithm extracts EXIF data from the uploaded photos and creates the Timeline by itself without user interaction. Just view one example.
-
-#### [chatter](http://www2.scs.ryerson.ca/~sdhayala/cgi-bin/project/)
-* A Twitter-like public chat engine, very simple implementation using Perl and php.
-
-
-### Preserving Golden Treasures:
 
 #### [Thirukural (திருக்குறள்)](https://github.com/dsivasuthan/thirukurals)
 * Thiruvalluvar wrote this classic Tamil sangam literature, consisting of 1330 couplets or Kurals, sometime between the third and first centuries BCE. I came across this compilation some time ago and made a copy/backup for myself. Thanks to all those who help compile this timeless piece of writing.
@@ -64,6 +30,14 @@ These projects are done in my free time and most of them are as old as 15 years.
 
 #### [my old homepage](/projects/old_stuff/HTML.htm)
 * This links to an old "website" I had built about 15 years ago
+
+### School Projects:
+
+#### [lifelens](http://sivasuthan.com/lifelens/)
+* A simple photo curation web service. What is special about this service is that it’s designed to present user photos in a Timeline view. The algorithm extracts EXIF data from the uploaded photos and creates the Timeline by itself without user interaction. Just view one example.
+
+#### [chatter](http://www2.scs.ryerson.ca/~sdhayala/cgi-bin/project/)
+* A Twitter-like public chat engine, very simple implementation using Perl and php.
 
 #### Stuff I modified from other sites:
 

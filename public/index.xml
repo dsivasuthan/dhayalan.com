@@ -6,10 +6,48 @@
     <description>Recent content on Siva Dhayalan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 07 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Dec 2018 23:05:13 -0500</lastBuildDate>
     
 	<atom:link href="https://dhayalan.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Good Tamil Movies</title>
+      <link>https://dhayalan.com/blog/good-tamil-movies/</link>
+      <pubDate>Fri, 14 Dec 2018 23:05:13 -0500</pubDate>
+      
+      <guid>https://dhayalan.com/blog/good-tamil-movies/</guid>
+      <description>sss</description>
+    </item>
+    
+    <item>
+      <title>Awesome Software</title>
+      <link>https://dhayalan.com/blog/awesome-software/</link>
+      <pubDate>Sat, 10 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://dhayalan.com/blog/awesome-software/</guid>
+      <description>The following is a list of software I have found before but I could never rememeber the name when I am trying to brag about them to someone. So, I am putting it back where I found them.
+Windows Tools  https://the-eye.eu/public/MSDN/ https://github.com/Nummer/Destroy-Windows-10-Spying  Interesting  http://mute.fm/  Web Services  http://www.10minutemail.com/ https://privacy.com/ - create virtual credit cards http://gen.lib.rus.ec/ - ebooks http://gen.lib.rus.ec/ - ebooks https://weboas.is/ - new tab http://www.myfridgefood.com/ - food https://opencourser.</description>
+    </item>
+    
+    <item>
+      <title>Clever and Useful Finds</title>
+      <link>https://dhayalan.com/blog/clever-and-useful-finds/</link>
+      <pubDate>Fri, 09 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://dhayalan.com/blog/clever-and-useful-finds/</guid>
+      <description> NES.css: 8-bit style CSS framework - https://bcrikko.github.io/NES.css/ 12 Factor CLI Apps - https://medium.com/@jdxcode/12-factor-cli-apps-dd3c227a0e46 Modern Backend Developer - https://medium.com/tech-tajawal/modern-backend-developer-in-2018-6b3f7b5f8b9
+  </description>
+    </item>
+    
+    <item>
+      <title>Get Motivated</title>
+      <link>https://dhayalan.com/blog/get-motivated/</link>
+      <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://dhayalan.com/blog/get-motivated/</guid>
+      <description>When you spend half your wake time on the interwebs every single day, you are bound to come across some materials that you find amusing, clever or motivating. That does not mean, I need constant motivation through somebody else&amp;rsquo;s work but some work or compilation do open a different kind world you have never explored or thought of. The following are some of meterials I had clipped some years back on Evernote (sorry, Evernote, you dug your own grave).</description>
+    </item>
     
     <item>
       <title>Setting up Linux for Web Development</title>
@@ -27,7 +65,7 @@
       
       <guid>https://dhayalan.com/projects/</guid>
       <description>These projects are done in my free time and most of them are as old as 15 years. Work projects are not listed here, but they showcase my skills better than any of these projects do. Contact me if you want to know about my work projects. Thank you.
-Some work projects: Ryerson United Way  Built on CQ5. One of the projects that I am very proud of because of what it stands for.</description>
+Simple Sketch - Android Application  I got tired of feature-rich and slow note-taking apps that require whole bunch of permissions to run.</description>
     </item>
     
     <item>
@@ -39,6 +77,24 @@ Some work projects: Ryerson United Way  Built on CQ5. One of the projects that I
       <description>Hi there, I am Siva.
 I am a Ryerson University graduate, currently working as a Full Stack Web Developer in Toronto. I&amp;rsquo;m also a coffee-lover, environmentalist, minimalist, novice photographer and a self-proclaimed car racer, among other things.
 Check out my projects or my photos.</description>
+    </item>
+    
+    <item>
+      <title>Maple Leaf</title>
+      <link>https://dhayalan.com/photos/maple-leaf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dhayalan.com/photos/maple-leaf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Park</title>
+      <link>https://dhayalan.com/photos/park/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dhayalan.com/photos/park/</guid>
+      <description></description>
     </item>
     
   </channel>

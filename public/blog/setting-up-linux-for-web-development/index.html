@@ -2,16 +2,6 @@
 <html lang="en-US">
 
 <head>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116839094-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-116839094-1');
-</script>
-
 <meta charset="utf-8">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -43,7 +33,7 @@
 <style media="screen">
   @font-face {
   font-family: 'Nexa Bold';
-  src: url('https://dhayalan.com/fonts/nexa_bold.otf');
+  src: url('https://dhayalan.com/fonts/Nexa Bold.otf');
 }
 
 html, body, div, span, applet, object, iframe,
@@ -780,18 +770,15 @@ kbd {
 .wf-ubuntu-mono-n4-active div.main .content .markdown pre {
       font-family: 'Ubuntu Mono';
 }
-.social > a > svg {
-  height:60px;
-  padding:5px;
-}
+
 
 </style>
 <style media="(min-width: 600px)">
   body {
-/* -webkit-justify-content: center;
+-webkit-justify-content: center;
 -moz-justify-content: center;
 -ms-justify-content: center;
-justify-content: center; */
+justify-content: center;
 }
 .non-narrow.zero-top-spacing {
 padding-top: 0 !important;
@@ -1072,6 +1059,7 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 <div class="header column">
 
     <div class="container">
+        
         <div class="content">
             <a href="https://dhayalan.com/"><div class="name"><h1>Siva Dhayalan</h1></div></a>
             <nav>
@@ -1081,6 +1069,12 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
                     
                     
                         
+                            
+                        
+                    
+                        
+                            
+                            <li><a href="https://dhayalan.com/photos">photos</a></li>
                             
                         
                     
@@ -1119,8 +1113,6 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
                     <div class="date" title="Wed Nov 7 2018 00:00:00 UTC">Nov 7, 2018</div>
                     
                         
-                        <div class="author middot" title="Siva Dhayalan">Siva Dhayalan</div>
-                        
                     
                     
                     <div class="reading-time middot">1 minute read</div>
@@ -1141,9 +1133,30 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
             <div class="markdown">
                 
     
-    <p>I have been using Windows for the last 15 years. I have always used Linux on the side for fun and tinkering but never tried it full time until a couple of years ago. I have been trying various distros for a while now, switching between Ubuntu Unity, Linux Cinamon, Manjaro, until I tried Kubuntu with KDE plasma. The sheer amount of cuztomizations right out of the box and support for HiDPI screen for Lenovo Yoga 2 Pro meant I could stick to this for a while.</p>
+    
+
+<p>I have been using Windows for the last 15 years. I have always used Linux on the side for fun and tinkering but never tried it full time until a couple of years ago. I have been trying various distros for a while now, switching between Ubuntu Unity, Linux Cinamon, Manjaro, until I tried Kubuntu with KDE plasma. The sheer amount of cuztomizations right out of the box and support for HiDPI screen for Lenovo Yoga 2 Pro meant I could stick to this for a while.</p>
 
 <p>This would be a guide for myself to speed up setting my laptop. The following is for Debian-based distros</p>
+
+<p>Actually, nevermind, switched to Manjaro for the moment.</p>
+
+<h2 id="manjaro">Manjaro:</h2>
+
+<ul>
+<li>touchpad:
+<code>sudo pacman -S xf86-input-synaptics</code></li>
+</ul>
+
+<p>install yay:</p>
+
+<pre><code>git clone https://aur.archlinux.org/yay.git
+cd yay/
+makepkg -si
+</code></pre>
+
+<p>chrome:
+<code>yay chrome</code></p>
 
 
             </div>
@@ -1153,6 +1166,11 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
             <div class="navigation">
                 
                 <div style="width: 100%;"></div>
+                
+                <div>
+                    <a href="https://dhayalan.com/blog/get-motivated/">Get Motivated</a>
+                    <img class="icon" src="https://dhayalan.com/img/next.svg" alt="next" />
+                </div>
                 
             </div>
             
@@ -1168,7 +1186,61 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
 
 <div class="footer column">
+    <div class="container">
 
+        
+
+        <div class="copyright">
+
+        
+
+        </div>
+        <div class="icons">
+
+        
+
+        
+
+        
+
+        
+            <a href="https://www.instagram.com/sdhayalan" rel=me target="_blank">
+                <img class="icon" src="https://dhayalan.com/img/instagram.svg" alt="instagram" />
+            </a>
+        
+
+        
+
+        
+            <a href="https://github.com/dsivasuthan" rel=me target="_blank">
+                <img class="icon" src="https://dhayalan.com/img/github.svg" alt="github" />
+            </a>
+        
+
+        
+
+        
+            <a href="https://www.linkedin.com/in/dsivasuthan" rel=me target="_blank">
+                <img class="icon" src="https://dhayalan.com/img/linkedin.svg" alt="linkedin" />
+            </a>
+        
+
+        
+
+        
+            <a href="mailto:you@example.com">
+                <img class="icon" src="https://dhayalan.com/img/email.svg" alt="email" />
+            </a>
+        
+
+        
+            <a href="https://dhayalan.com/index.xml">
+                <img class="icon" src="https://dhayalan.com/img/rss.svg" alt="rss" />
+            </a>
+        
+
+        </div>
+    </div>
 </div>
 
 
