@@ -8,3 +8,19 @@ I have been using Windows for the last 15 years. I have always used Linux on the
 
 This would be a guide for myself to speed up setting my laptop. The following is for Debian-based distros
 
+Actually, nevermind, switched to Manjaro for the moment.
+
+## Manjaro:
+
+* touchpad:
+`sudo pacman -S xf86-input-synaptics`
+
+install yay:
+```
+git clone https://aur.archlinux.org/yay.git
+cd yay/
+makepkg -si
+```
+
+chrome:
+`yay chrome` 
