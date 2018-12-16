@@ -79,23 +79,5 @@ I am a Ryerson University graduate, currently working as a Full Stack Web Develo
 Check out my projects or my photos.</description>
     </item>
     
-    <item>
-      <title>Maple Leaf</title>
-      <link>https://dhayalan.com/photos/maple-leaf/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dhayalan.com/photos/maple-leaf/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Park</title>
-      <link>https://dhayalan.com/photos/park/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dhayalan.com/photos/park/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>
