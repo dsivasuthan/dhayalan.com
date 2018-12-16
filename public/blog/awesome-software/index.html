@@ -12,7 +12,7 @@
 <meta property="og:site_name" content="Siva Dhayalan" />
 <meta property="og:locale" content="en-US" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://dhayalan.com/blog/awesome-software/" />
+<meta property="og:url" content="/blog/awesome-software/" />
 <meta property="og:title" content="Awesome Software" />
 <meta property="twitter:title" content="Awesome Software">
 
@@ -27,13 +27,21 @@
      Siva Dhayalan - Awesome Software 
 
 </title>
-<link rel="canonical" href="https://dhayalan.com/blog/awesome-software/">
+<link rel="canonical" href="/blog/awesome-software/">
 
 
 <style media="screen">
   @font-face {
-  font-family: 'Nexa Bold';
-  src: url('https://dhayalan.com/fonts/Nexa Bold.otf');
+	font-family: 'Share Tech Mono';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Share Tech Mono'), local('ShareTechMono-Regular'), url(https://fonts.gstatic.com/s/sharetechmono/v6/RQxK-3RA0Lnf3gnnnNrAsVlgUn8GogvcKKzoM9Dh-4E.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+* {
+	font-family: 'Share Tech Mono', monospace !important;
+	font-weight: lighter;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -116,7 +124,7 @@ body {
   width: 100%;
   min-height: 100%;
   font-weight: 400;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   color: #111111;
   line-height: 1.6;
   text-rendering: optimizeLegibility !important;
@@ -193,12 +201,12 @@ div.header .container .logo {
   
   max-width: 100px;
   
-  margin-left: -2em;
+  margin-left: 0rem;
 }
 div.header .name {
   padding-top: 20px;
   font-size: 28px;
-  font-family: 'Nexa Bold', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   letter-spacing: -0.005rem;
   
   text-transform: uppercase;
@@ -233,9 +241,9 @@ div.header nav ul li:last-child {
 div.header nav ul a {
   color: #555555;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   text-transform: uppercase;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
@@ -277,15 +285,16 @@ div.footer .container a:hover {
   opacity: 0.8;
 }
 div.footer .container a .icon {
-  width: 16px;
-  height: 16px;
+  width: 25px;
+  height: 25px;
+  margin:5px;
 }
 div.footer .container .copyright {
   flex-grow: 0.5;
   text-align: start;
 }
 div.footer .container .icons {
-  flex-grow: 0.5;
+  flex-grow: 0.9;
   text-align: end;
 }
 div.main .container {
@@ -320,7 +329,7 @@ div.main .content .posts {
 div.main .content .page-heading {
   font-size: 20px;
   font-weight: 700;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   letter-spacing: -0.005rem;
   text-transform: uppercase;
   -moz-osx-font-smoothing: grayscale;
@@ -406,7 +415,7 @@ div.main .container.f04 .content {
 div.main .container.f04 .content .num {
   margin: 30px 0px 30px 0;
   font-weight: 400;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   font-size: 50px;
 }
 div.main .container.f04 .content .detail {
@@ -414,7 +423,7 @@ div.main .container.f04 .content .detail {
 }
 div.main .container .content .groupby {
   margin-top: 1em;
-  padding-left: 0.5em;
+  /* padding-left: 0.5em; */
 }
 div.main .container .content .post-item {
   display: -webkit-flex;
@@ -433,7 +442,7 @@ div.main .container .content .post-item .meta {
   font-size: 14px;
   color: #666666;
   display: none;
-  min-width: 100px;
+  min-width: 50px;
 }
 div.main .container .content .see-more {
   font-style: italic;
@@ -579,7 +588,7 @@ div.main .content .markdown dd {
   margin-bottom: .5rem;
 }
 div.main .content .markdown ul {
-  list-style-type: disc;
+  list-style-type: none;
   list-style-position: outside;
   margin-bottom: 1.25rem;
 }
@@ -693,8 +702,8 @@ div.main .content .navigation div {
   margin-top: 1em;
 }
 div.main .content .navigation .icon {
-  width: 16px;
-  height: 16px;
+  width: 25px;
+  height: 25px;
 }
 div.main .content .navigation a {
   width: 250px;
@@ -759,11 +768,11 @@ kbd {
 .wf-raleway-n7-active div.main .content .markdown h4,
 .wf-raleway-n7-active div.main .content .markdown h5,
 .wf-raleway-n7-active div.main .content .markdown h6 {
-      font-family: 'Raleway';
+      font-family: 'Share Tech Mono';
 }
 
 .wf-merriweather-n3-active div.main .content .markdown {
-      font-family: 'Merriweather';
+      font-family: 'Share Tech Mono';
 }
 
 .wf-ubuntu-mono-n4-active div.main .content .markdown code,
@@ -772,13 +781,24 @@ kbd {
 }
 
 
+img.logo {
+  padding-right:15px;
+  padding-top:15px;
+}
+
+div.header-home .container .logo {
+  margin-left:0;
+}
+ul {
+  list-style-type: none;
+}
 </style>
 <style media="(min-width: 600px)">
   body {
--webkit-justify-content: center;
+/* -webkit-justify-content: center;
 -moz-justify-content: center;
 -ms-justify-content: center;
-justify-content: center;
+justify-content: center; */
 }
 .non-narrow.zero-top-spacing {
 padding-top: 0 !important;
@@ -811,7 +831,7 @@ margin: 0;
 }
 div.header-home .container .logo {
 max-width: 216px;
-margin-left: 24px;
+/* margin-left: 24px; */
 }
 div.header-home .name-home {
 padding-top: 30px;
@@ -1043,7 +1063,7 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
 <link rel="shortcut icon"
 
-    href="https://dhayalan.com/img/logo.png"
+    href="/img/sd_icon_72.png"
 
 >
 
@@ -1060,21 +1080,29 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
     <div class="container">
         
+        <a href="/"><img class="logo" src="/img/sd_icon_72.png" alt="logo"></a>
+        
         <div class="content">
-            <a href="https://dhayalan.com/"><div class="name"><h1>Siva Dhayalan</h1></div></a>
+            <a href="/"><div class="name"><h1>Siva Dhayalan</h1></div></a>
             <nav>
                 <ul>
                     
-                            <li><a href="https://dhayalan.com/blog/">Blog</a></li>
+                            <li><a href="/blog/">Blog</a></li><li><a>|</a></li>
                     
                     
                         
                             
                         
                     
+                        
+                            
+                            <li><a href="/posts">posts</a></li><li><a>|</a></li>
+                            
+                        
+                    
                     
                         
-                            <li><a href="https://dhayalan.com/projects/">Projects</a></li>
+                            <li><a href="/projects/">Projects</a></li>
                         
                     
                         
@@ -1104,7 +1132,7 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
                 </div>
                 <div class="meta">
-                    <div class="date" title="Sat Nov 10 2018 00:00:00 UTC">Nov 10, 2018</div>
+                    <div class="date" title="Sat Nov 10 2018 00:00:00 UTC">[Nov]</div>
                     
                         
                     
@@ -1176,15 +1204,15 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
             <div class="navigation">
                 
                 <div>
-                    <img class="icon" src="https://dhayalan.com/img/back.svg" alt="back" />
-                    <a href="https://dhayalan.com/blog/clever-and-useful-finds/">Clever and Useful Finds</a>
+                    <img class="icon" src="/img/back.svg" alt="back" />
+                    <a href="/blog/clever-and-useful-finds/">Clever and Useful Finds</a>
                 </div>
                 
                 <div style="width: 100%;"></div>
                 
                 <div>
-                    <a href="https://dhayalan.com/blog/good-tamil-movies/">Good Tamil Movies</a>
-                    <img class="icon" src="https://dhayalan.com/img/next.svg" alt="next" />
+                    <a href="/blog/good-tamil-movies/">Good Tamil Movies</a>
+                    <img class="icon" src="/img/next.svg" alt="next" />
                 </div>
                 
             </div>
@@ -1220,7 +1248,7 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
         
             <a href="https://www.instagram.com/sdhayalan" rel=me target="_blank">
-                <img class="icon" src="https://dhayalan.com/img/instagram.svg" alt="instagram" />
+                <img class="icon" src="/img/instagram.svg" alt="instagram" />
             </a>
         
 
@@ -1228,7 +1256,7 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
         
             <a href="https://github.com/dsivasuthan" rel=me target="_blank">
-                <img class="icon" src="https://dhayalan.com/img/github.svg" alt="github" />
+                <img class="icon" src="/img/github.svg" alt="github" />
             </a>
         
 
@@ -1236,7 +1264,7 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
         
             <a href="https://www.linkedin.com/in/dsivasuthan" rel=me target="_blank">
-                <img class="icon" src="https://dhayalan.com/img/linkedin.svg" alt="linkedin" />
+                <img class="icon" src="/img/linkedin.svg" alt="linkedin" />
             </a>
         
 
@@ -1244,13 +1272,13 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
         
             <a href="mailto:you@example.com">
-                <img class="icon" src="https://dhayalan.com/img/email.svg" alt="email" />
+                <img class="icon" src="/img/email.svg" alt="email" />
             </a>
         
 
         
-            <a href="https://dhayalan.com/index.xml">
-                <img class="icon" src="https://dhayalan.com/img/rss.svg" alt="rss" />
+            <a href="/index.xml">
+                <img class="icon" src="/img/rss.svg" alt="rss" />
             </a>
         
 
@@ -1270,12 +1298,12 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
 
 
-  <script src="https://dhayalan.com/js/highlight.min.js" defer></script>
+  <script src="/js/highlight.min.js" defer></script>
   
 
 
 
-  <script src="https://dhayalan.com/js/progressively.min.js" defer></script>
+  <script src="/js/progressively.min.js" defer></script>
 
 
 

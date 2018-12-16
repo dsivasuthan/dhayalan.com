@@ -15,12 +15,8 @@ Actually, nevermind, switched to Manjaro for the moment.
 * touchpad:
 `sudo pacman -S xf86-input-synaptics`
 
-install yay:
-```
-git clone https://aur.archlinux.org/yay.git
-cd yay/
-makepkg -si
-```
+* install yay:
+`git clone https://aur.archlinux.org/yay.git && cd yay/ && makepkg -si`
 
-chrome:
+* chrome:
 `yay chrome` 

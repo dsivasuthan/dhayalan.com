@@ -7,8 +7,16 @@
 
 <style media="screen">
   @font-face {
-  font-family: 'Nexa Bold';
-  src: url('https://dhayalan.com/fonts/Nexa Bold.otf');
+	font-family: 'Share Tech Mono';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Share Tech Mono'), local('ShareTechMono-Regular'), url(https://fonts.gstatic.com/s/sharetechmono/v6/RQxK-3RA0Lnf3gnnnNrAsVlgUn8GogvcKKzoM9Dh-4E.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+* {
+	font-family: 'Share Tech Mono', monospace !important;
+	font-weight: lighter;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -91,7 +99,7 @@ body {
   width: 100%;
   min-height: 100%;
   font-weight: 400;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   color: #111111;
   line-height: 1.6;
   text-rendering: optimizeLegibility !important;
@@ -168,12 +176,12 @@ div.header .container .logo {
   
   max-width: 100px;
   
-  margin-left: -2em;
+  margin-left: 0rem;
 }
 div.header .name {
   padding-top: 20px;
   font-size: 28px;
-  font-family: 'Nexa Bold', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   letter-spacing: -0.005rem;
   
   text-transform: uppercase;
@@ -208,9 +216,9 @@ div.header nav ul li:last-child {
 div.header nav ul a {
   color: #555555;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   text-transform: uppercase;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
@@ -252,15 +260,16 @@ div.footer .container a:hover {
   opacity: 0.8;
 }
 div.footer .container a .icon {
-  width: 16px;
-  height: 16px;
+  width: 25px;
+  height: 25px;
+  margin:5px;
 }
 div.footer .container .copyright {
   flex-grow: 0.5;
   text-align: start;
 }
 div.footer .container .icons {
-  flex-grow: 0.5;
+  flex-grow: 0.9;
   text-align: end;
 }
 div.main .container {
@@ -295,7 +304,7 @@ div.main .content .posts {
 div.main .content .page-heading {
   font-size: 20px;
   font-weight: 700;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   letter-spacing: -0.005rem;
   text-transform: uppercase;
   -moz-osx-font-smoothing: grayscale;
@@ -381,7 +390,7 @@ div.main .container.f04 .content {
 div.main .container.f04 .content .num {
   margin: 30px 0px 30px 0;
   font-weight: 400;
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   font-size: 50px;
 }
 div.main .container.f04 .content .detail {
@@ -389,7 +398,7 @@ div.main .container.f04 .content .detail {
 }
 div.main .container .content .groupby {
   margin-top: 1em;
-  padding-left: 0.5em;
+  /* padding-left: 0.5em; */
 }
 div.main .container .content .post-item {
   display: -webkit-flex;
@@ -408,7 +417,7 @@ div.main .container .content .post-item .meta {
   font-size: 14px;
   color: #666666;
   display: none;
-  min-width: 100px;
+  min-width: 50px;
 }
 div.main .container .content .see-more {
   font-style: italic;
@@ -554,7 +563,7 @@ div.main .content .markdown dd {
   margin-bottom: .5rem;
 }
 div.main .content .markdown ul {
-  list-style-type: disc;
+  list-style-type: none;
   list-style-position: outside;
   margin-bottom: 1.25rem;
 }
@@ -668,8 +677,8 @@ div.main .content .navigation div {
   margin-top: 1em;
 }
 div.main .content .navigation .icon {
-  width: 16px;
-  height: 16px;
+  width: 25px;
+  height: 25px;
 }
 div.main .content .navigation a {
   width: 250px;
@@ -734,11 +743,11 @@ kbd {
 .wf-raleway-n7-active div.main .content .markdown h4,
 .wf-raleway-n7-active div.main .content .markdown h5,
 .wf-raleway-n7-active div.main .content .markdown h6 {
-      font-family: 'Raleway';
+      font-family: 'Share Tech Mono';
 }
 
 .wf-merriweather-n3-active div.main .content .markdown {
-      font-family: 'Merriweather';
+      font-family: 'Share Tech Mono';
 }
 
 .wf-ubuntu-mono-n4-active div.main .content .markdown code,
@@ -747,13 +756,24 @@ kbd {
 }
 
 
+img.logo {
+  padding-right:15px;
+  padding-top:15px;
+}
+
+div.header-home .container .logo {
+  margin-left:0;
+}
+ul {
+  list-style-type: none;
+}
 </style>
 <style media="(min-width: 600px)">
   body {
--webkit-justify-content: center;
+/* -webkit-justify-content: center;
 -moz-justify-content: center;
 -ms-justify-content: center;
-justify-content: center;
+justify-content: center; */
 }
 .non-narrow.zero-top-spacing {
 padding-top: 0 !important;
@@ -786,7 +806,7 @@ margin: 0;
 }
 div.header-home .container .logo {
 max-width: 216px;
-margin-left: 24px;
+/* margin-left: 24px; */
 }
 div.header-home .name-home {
 padding-top: 30px;
@@ -1018,7 +1038,7 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
 <link rel="shortcut icon"
 
-    href="https://dhayalan.com/img/logo.png"
+    href="/img/sd_icon_72.png"
 
 >
 
@@ -1044,14 +1064,14 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 </style>
 </head>
 <body>
-    <img src= class="logo" alt="logo" />
+    <img src=img/sd_icon_72.png class="logo" alt="logo" />
     <div class="container f04">
         <div class="content">
             <div class="header column">
                 <div class="name">404</div>
             </div>
             <div class="detail">The page you were looking for does not exist.</div>
-            <div class="suggestion"><a href="https://dhayalan.com/">Visit the home page</a></div>
+            <div class="suggestion"><a href="/">Visit the home page</a></div>
         </div>
     </div>
 </body>
