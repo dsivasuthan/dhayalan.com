@@ -20,8 +20,8 @@ dateformfull = "Mon Jan 2 2006 15:04:05 MST"
 description = "Documenting myself"
 # copyright = ""
 # copyrightUrl = "https://creativecommons.org/licenses/by-sa/4.0/"
-logofile = "img/sd_icon_72.png"
-faviconfile = "img/sd_icon_72.png"
+logofile = "/img/sd_icon_72.png"
+faviconfile = "/img/sd_icon_72.png"
 highlightjs = true
 progressively = true
 share = false
@@ -45,7 +45,7 @@ small_banner_logo = true
 align_left = true
 
 [params.colors]
-identifier = "#527fc1f"
+#identifier = "#52fc1f"
 identifier_dark = "#1a3152"
 trivial = "#6a7a8b"
 foreground = "#181d2a"

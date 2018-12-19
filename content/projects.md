@@ -1,6 +1,6 @@
 +++
 date = "2015-08-22"
-title = "Projects"
+title = "projects"
 +++
 
 These projects are done in my free time and most of them are as old as 15 years. Work projects are not listed here, but they showcase my skills better than any of these projects do. Contact me if you want to know about my work projects. Thank you.
