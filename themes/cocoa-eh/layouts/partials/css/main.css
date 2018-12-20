@@ -1,37 +1,4 @@
-<!DOCTYPE html>
-<html lang="en-US">
-
-<head>
-<meta charset="utf-8">
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Documenting myself">
-
-
-<meta property="og:site_name" content="Siva Dhayalan" />
-<meta property="og:locale" content="en-US" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D/" />
-<meta property="og:title" content="வணக்கம்" />
-<meta property="twitter:title" content="வணக்கம்">
-
-    <meta property="twitter:card" content="summary">
-
-<meta property="og:description" content="">
-<meta property="twitter:description" content="">
-
-<title>
-
-
-     Siva Dhayalan - வணக்கம் 
-
-</title>
-<link rel="canonical" href="/%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D/">
-
-
-<style media="screen">
-  @font-face {
+@font-face {
 	font-family: 'Share Tech Mono';
 	font-style: normal;
 	font-weight: 400;
@@ -198,9 +165,11 @@ div.header .content {
   align-items: center;
 }
 div.header .container .logo {
-  
+  {{ if .Site.Params.enlarged }}
+  max-width: 200px;
+  {{ else }}
   max-width: 100px;
-  
+  {{ end }}
   margin-left: 0rem;
 }
 div.header .name {
@@ -208,9 +177,15 @@ div.header .name {
   font-size: 28px;
   font-family: 'Share Tech Mono', monospace;
   letter-spacing: -0.005rem;
-  
+  {{ if isset .Site.Params "titlestyle" }}
+      {{ if in "capitalize uppercase lowercase none full-width" .Site.Params.titlestyle }}
+  text-transform: {{ .Site.Params.titlestyle }};
+      {{ else }}
+      {{ errorf "This titlestyle is not a valid text-transform css parameter: %s" .Site.Params.titlestyle }}
+      {{ end }}
+  {{ else }}
   text-transform: uppercase;
-  
+  {{ end }}
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
@@ -323,8 +298,10 @@ div.main .content .title-container {
   justify-content: space-between;
 }
 div.main .content .posts {
-  
-  
+  {{ $nbPosts := len (where .Data.Pages "Params.best" true)  }}
+  {{ if gt $nbPosts 0 }}
+  margin-bottom: 4em;
+  {{ end }}
 }
 div.main .content .page-heading {
   font-size: 20px;
@@ -569,9 +546,11 @@ div.main .content .markdown a code:hover {
   text-decoration: underline;
 }
 div.main .content .markdown p {
-  
+  {{if .Site.Params.align_left}}
   text-align: left;
-  
+  {{else}}
+  text-align: justify;
+  {{end}}
   margin-top: 0;
   margin-bottom: 1em;
 }
@@ -757,7 +736,7 @@ kbd {
 
 /* Fonts */
 
-
+{{ if not .Site.Params.disablefancyfonts  }}
 .wf-raleway-n4-active body, 
 .wf-raleway-n4-active div.header nav ul a,
 .wf-raleway-n7-active div.main .content .page-heading,
@@ -779,7 +758,7 @@ kbd {
 .wf-ubuntu-mono-n4-active div.main .content .markdown pre {
       font-family: 'Ubuntu Mono';
 }
-
+{{ end  }}
 
 img.logo {
   padding-right:15px;
@@ -792,443 +771,3 @@ div.header-home .container .logo {
 ul {
   list-style-type: none;
 }
-</style>
-<style media="(min-width: 600px)">
-  body {
-/* -webkit-justify-content: center;
--moz-justify-content: center;
--ms-justify-content: center;
-justify-content: center; */
-}
-.non-narrow.zero-top-spacing {
-padding-top: 0 !important;
-}
-section {
-padding: 0 16px;
-margin-left: 100px;
-margin-right: 100px;
-
-max-width: 750px;
-
-}
-div.column {
-padding: 0 16px;
-
-max-width: 750px;
-
-}
-div.header {
-background-color: transparent;
-}
-div.header .container {
--webkit-justify-content: flex-start;
--moz-justify-content: flex-start;
--ms-justify-content: flex-start;
-justify-content: flex-start;
-}
-div.header .container .logo {
-margin: 0;
-}
-div.header-home .container .logo {
-max-width: 216px;
-/* margin-left: 24px; */
-}
-div.header-home .name-home {
-padding-top: 30px;
-font-size: 40px;
-}
-div.header-home nav ul a {
-font-size: 18px;
-}
-div.header .content {
--webkit-align-items: flex-start;
--moz-align-items: flex-start;
--ms-align-items: flex-start;
-align-items: flex-start;
-}
-div.header .name {
-color: #333333;
-}
-div.header nav {
-font-size: 14px;
-margin-bottom: 0;
-}
-div.header nav ul {
-text-align: left;
-}
-div.header nav ul a {
-color: #666666;
-}
-div.header nav ul a:hover {
-color: #333333;
-}
-div.footer {
-background-color: transparent;
-}
-div.footer .container {
-flex-direction: row;
-}
-div.footer .container a {
-margin-left: 3px;
-margin-right: 3px;
-color: #666666;
-}
-div.footer .container a:hover {
-color: #333333;
-}
-div.footer .container a .icon {
-font-size: 18px;
-}
-div.footer .container a .icon.larger {
-font-size: 20px;
-}
-div.main .content .front-matter .date,
-div.main .content .front-matter .author,
-div.main .content .front-matter .tags,
-div.main .content .front-matter .word-count,
-div.main .content .front-matter .middot:before {
-display: initial;
-}
-div.main .container.f04 {
--webkit-justify-content: flex-start;
--moz-justify-content: flex-start;
--ms-justify-content: flex-start;
-justify-content: flex-start;
-}
-div.main .container.f04 .content {
--webkit-align-items: flex-start;
--moz-align-items: flex-start;
--ms-align-items: flex-start;
-align-items: flex-start;
-}
-div.main .container.f04 .content .num {
-margin: 0 0 10px 0;
-font-size: 32px;
-}
-div.main .container.f04 .content .detail {
-margin-bottom: 30px;
-}
-.container {
-padding: 0 30px;
-}
-div.header {
-padding-top: 60px;
-padding-bottom: 60px;
-}
-div.footer {
-padding-top: 60px;
-padding-bottom: 60px;
-}
-div.main {
-padding-top: 0;
-}
-div.main .content {
-  
-  font-size: 16px;
-  
-}
-div.main .container .content .post-item {
-display: flex;
-list-style: none;
-padding-left: 1.5em;
-}
-div.main .container .content .post-item .meta {
-display: block;
-}
-div.main .content .markdown blockquote {
-padding-right: 5rem;
-padding-left: 1.25rem;
-}
-div.main .content .navigation {
--webkit-flex-direction: row;
--moz-flex-direction: row;
--ms-flex-direction: row;
-flex-direction: row;
-}
-div.main .content .navigation div {
-margin-top: 0em;
-}
-
-</style>
-<style media="(min-width: 769px)">
-  div.main .content .markdown figure {
-width: 110%;
-margin-left: -4%;
-}
-div.main .content .markdown img {
-max-width: 110%;
-width: 110%;
-margin-left: -4%;
-}
-div.main .content .markdown pre {
-width: 110%;
-margin-left: -4%;
-}
-
-</style>
-
-
-  <style type="text/css" media="screen">
-    .hljs{display:block;background:white;padding:0.5em;color:#333333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-string,.hljs-variable,.hljs-template-variable,.hljs-strong,.hljs-emphasis,.hljs-quote{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-literal,.hljs-symbol,.hljs-bullet,.hljs-attribute{color:#0086b3}.hljs-section,.hljs-name{color:#63a35c}.hljs-tag{color:#333333}.hljs-title,.hljs-attr,.hljs-selector-id,.hljs-selector-class,.hljs-selector-attr,.hljs-selector-pseudo{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}
-  </style>
-
-
-
-  <style type="text/css" media="screen">
-    .progressive{overflow:hidden;position:relative;background:#efefef}.progressive__img{width:100%;height:100%;position:absolute;-webkit-transform:translateZ(0);transform:translateZ(0)}.progressive--not-loaded{filter:blur(30px);-webkit-filter:blur(30px)}.progressive--is-loaded{filter:blur(20px);-webkit-filter:blur(20px);-webkit-animation:sharpen .5s both;animation:sharpen .5s both}@-webkit-keyframes sharpen{from{filter:blur(20px);-webkit-filter:blur(20px)}to{filter:blur(0);-webkit-filter:blur(0)}}@keyframes sharpen{from{filter:blur(20px);-webkit-filter:blur(20px)}to{filter:blur(0);-webkit-filter:blur(0)}}
-  </style>
-
-
-
-
-
-  <style type="text/css" media="screen">
-    a {
-    color: <no value>;
-}
-
-a:hover {
-    color: #1a3152;
-}
-
-div.main .content .markdown, div.header .name, div.header nav ul a:hover {
-    color: #181d2a;
-}
-
-div.header nav ul a {
-    color: #6a7a8b;
-}
-
-div.main .content .markdown code {
-    background-color: #f9f9f9;
-    color: <no value>;
-}
-
-div.main .content .markdown pre, div.main .content .markdown pre code {
-    background-color: #282a36;
-    color: #87a5d2;
-}
-
-.hljs, .hljs-subst, .hljs-variable {
-    color: #87a5d2;
-}
-
-.hljs-type {
-    color: #97d28b;
-}
-
-.hljs-quote {
-    color: #ffcb8d;
-}
-
-.hljs-string, .hljs-number, .hljs-selector-id, .hljs-selector-class, .hljs-template-tag, .hljs-deletion {
-    color: #96c2d7;
-}
-
-.hljs-comment {
-    color: #6a7a8b;
-}
-
-.hljs-regexp, .hljs-symbol, .hljs-template-variable {
-    color: #ffcb8d;
-}
-
-.hljs-keyword, .hljs-attribute, .hljs-meta-keyword, .hljs-doctag, .hljs-name {
-    color: #97d28b;
-}
-
-.hljs-link, .hljs-selector-attr, .hljs-selector-pseudo, .hljs-title, .hljs-section {
-    color: #ff8e91;
-}
-
-.hljs-built_in, .hljs-bullet, .hljs-code, .hljs-addition {
-    color: #97d28b;
-}
-
-.ssk {
-    background-color: #6a7a8b;
-}
-
-  </style>
-
-
-
-
-
-<link rel="shortcut icon"
-
-    href="/img/sd_icon_72.png"
-
->
-
-
-
-
-</head>
-
-
-<body>
-
-
-<div class="header column">
-
-    <div class="container">
-        
-        <a href="/"><img class="logo" src="/img/sd_icon_72.png" alt="logo"></a>
-        
-        <div class="content">
-            <a href="/"><div class="name"><h1>Siva Dhayalan</h1></div></a>
-            <nav>
-                <ul>
-                    
-                    
-                        
-                            
-                            <li><a href="/posts">posts</a></li><li><a>|</a></li>
-                            
-                        
-                    
-                    
-                        
-                            <li><a href="/projects/">projects</a></li><li><a>|</a></li>
-                        
-                    
-                        
-                            <li><a href="/%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D/">வணக்கம்</a></li><li><a>|</a></li>
-                        
-                    
-                        
-                    
-                </ul>
-            </nav>
-        </div>
-    </div>
-</div>
-
-
-
-<div class="main column">
-    <div class="container">
-        <div class="content">
-            <div class="page-heading">
-
-    
-    வணக்கம்
-    
-
-</div>
-
-            <div class="markdown">
-                
-    
-    <p>நான் சிவா. நான் ஒரு மென்பொருள் கட்டுமான பொறியியலாளர்.</p>
-
-<p>தமிழின் மீது மிகுந்த அன்பும் ஆர்வமும் கொண்டதால், கட்டாயமாக தமிழில் ஒரு பக்கமாவது நானே தட்டச்சு செய்து ஒரு பக்கம் எனது வளையத்தளத்தில் பதிவு செய்ய வேண்டும் என்பது எனது ஆசை. அதனால் அதிகாலை இரண்டு மணிக்கு இதை எனது கையடக்க தொலை பேசியில் எழுதிக்கொண்டிருக்கிறேன்.</p>
-
-<p>அவ்வப்போது தமிழில் ஓரிரு பக்கங்கள் உருவாக்க நினைத்திருக்கிறேன், பார்க்கலாம்.</p>
-
-<p>தமிழன் என்று சொல்லடா, தலை நிமிர்ந்து நில்லடா! ✌</p>
-
-
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<div class="footer column">
-    <div class="container">
-
-        
-
-        <div class="copyright">
-
-        
-
-        </div>
-        <div class="icons">
-
-        
-
-        
-
-        
-
-        
-            <a href="https://www.instagram.com/sdhayalan" rel=me target="_blank">
-                <img class="icon" src="/img/instagram.svg" alt="instagram" />
-            </a>
-        
-
-        
-
-        
-            <a href="https://github.com/dsivasuthan" rel=me target="_blank">
-                <img class="icon" src="/img/github.svg" alt="github" />
-            </a>
-        
-
-        
-
-        
-            <a href="https://www.linkedin.com/in/dsivasuthan" rel=me target="_blank">
-                <img class="icon" src="/img/linkedin.svg" alt="linkedin" />
-            </a>
-        
-
-        
-
-        
-            <a href="mailto:me@sivasuthan.com">
-                <img class="icon" src="/img/email.svg" alt="email" />
-            </a>
-        
-
-        
-            <a href="/index.xml">
-                <img class="icon" src="/img/rss.svg" alt="rss" />
-            </a>
-        
-
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-  <script src="/js/highlight.min.js" defer></script>
-  
-
-
-
-  <script src="/js/progressively.min.js" defer></script>
-
-
-
-
-
-
-
-
-<script>
-  window.onload = function() {
-    
-      hljs.initHighlighting();
-    
-    
-      progressively.init({delay: 30, throttle: 50});
-    
-    
-  };
-</script>
-
-
-
-
-</body>
-</html>
-
