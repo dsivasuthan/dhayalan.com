@@ -1,12 +1,19 @@
+---
+date: 2018-12-23
+title: Podcasts I listen(ed) to
+draft: false
+---
+
 As I much as I do like to boast about the sheer amount podcasts listen(ed) to, it is not the intention of this posts. Rather, I find this a good place to share such details about me and document myself. I don't facebook telling 3rd party service that I am into money just because I listen to Freakonomic and Planet Money. This page is something I control and no third party has access to it (except Google analytics, until I configure matamo). 
 
 ## Podcasts I highly recommend:
 * Serial 
 * Freakonomics Radio
-* This American Life (only select episodes)
+* This American Life (select episodes)
 * 99% Invisible
 * Stuff You Should Know
-* Invisibilia (only 1st season, then I stopped)
+* Invisibilia (only 1st season)
 * Reply All (early episodes)
+* TED Radio Hour (select episodes)
 
 There are some good CBC ones I listened to. You could choose one depending on your taste.

@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Siva Dhayalan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 10 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 23 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Podcasts I listen(ed) to</title>
+      <link>/posts/podcasts-i-listen-to/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/podcasts-i-listen-to/</guid>
+      <description>As I much as I do like to boast about the sheer amount podcasts listen(ed) to, it is not the intention of this posts. Rather, I find this a good place to share such details about me and document myself. I don&amp;rsquo;t facebook telling 3rd party service that I am into money just because I listen to Freakonomic and Planet Money. This page is something I control and no third party has access to it (except Google analytics, until I configure matamo).</description>
+    </item>
     
     <item>
       <title>Awesome Software</title>
