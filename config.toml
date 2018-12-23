@@ -12,7 +12,7 @@ disqusshortname = ""
 pluralizelisttitles = false
 
 [permalinks]
-blog = "blog/:slug/"
+blog = "posts/:slug/"
 
 [params]
 dateform = "[Jan]"
