@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Cool Youtube channels</title>
+      <link>/posts/cool-youtube-channels/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/cool-youtube-channels/</guid>
+      <description>under construction</description>
+    </item>
+    
+    <item>
       <title>Podcasts I listen(ed) to</title>
       <link>/posts/podcasts-i-listen-to/</link>
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
@@ -31,23 +40,31 @@ Windows Tools  https://the-eye.eu/public/MSDN/ https://github.com/Nummer/Destroy
     </item>
     
     <item>
-      <title>Clever and Useful Finds</title>
+      <title>Inspiring Work</title>
       <link>/posts/clever-and-useful-materials/</link>
       <pubDate>Fri, 09 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>/posts/clever-and-useful-materials/</guid>
       <description>The following are a non-comprehensive list of articles and links I have come across that are note-worthy
- NES.css: 8-bit style CSS framework - https://bcrikko.github.io/NES.css/ 12 Factor CLI Apps - https://medium.com/@jdxcode/12-factor-cli-apps-dd3c227a0e46 Modern Backend Developer - https://medium.com/tech-tajawal/modern-backend-developer-in-2018-6b3f7b5f8b9
- The Importance of Keeping A Notebook  </description>
+ A Short Guide to a Happy Life: Anna Quindlen on Work, Joy, and How to Live Rather Than Exist
+ NES.css: 8-bit style CSS framework
+ 12 Factor CLI Apps
+ Modern Backend Developer
+ The Importance of Keeping A Notebook
+ Kurzgesagt Projects
+ clickclickclick.click
+ mnmlst
+ Travel Independent
+ OpenMedia</description>
     </item>
     
     <item>
-      <title>Get Motivated</title>
+      <title>Random Life Advice</title>
       <link>/posts/get-motivated/</link>
       <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>/posts/get-motivated/</guid>
-      <description>When you spend half your wake time on the interwebs every single day, you are bound to come across some materials that you find amusing, clever or motivating. That does not mean, I need constant motivation through somebody else&amp;rsquo;s work but some work or compilation do open a different kind world you have never explored or thought of. The following are some of meterials I had clipped some years back on Evernote (sorry, Evernote, you dug your own grave).</description>
+      <description>When you spend half your wake time on the interwebs every single day, you are bound to come across some materials that you find amusing, clever or motivating. That does not mean I need constant motivation through somebody else&amp;rsquo;s work but some works do open a different kind world you have never explored or thought of. The following are some of the materials I had clipped some years back on Evernote (sorry, Evernote, you dug your own grave).</description>
     </item>
     
     <item>
@@ -57,6 +74,15 @@ Windows Tools  https://the-eye.eu/public/MSDN/ https://github.com/Nummer/Destroy
       
       <guid>/posts/setting-up-linux-for-dev/</guid>
       <description>I have been using Windows for the last 15 years. I have always used Linux on the side for fun and tinkering but never tried it full time until a couple of years ago. I have been trying various distros for a while now, switching between Ubuntu Unity, Linux Cinamon, Manjaro, until I tried Kubuntu with KDE plasma. The sheer amount of cuztomizations right out of the box and support for HiDPI screen for Lenovo Yoga 2 Pro meant I could stick to this for a while.</description>
+    </item>
+    
+    <item>
+      <title>Keep It Local</title>
+      <link>/posts/keep-it-local/</link>
+      <pubDate>Wed, 08 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/keep-it-local/</guid>
+      <description>In an effort to keep things local, some good folks at https://madeinca.ca/ have compiled a list Canadian companies &amp;lsquo;so you can support Canadian jobs and Canadian workers. I felt like supporting them.</description>
     </item>
     
     <item>
@@ -88,7 +114,7 @@ Simple Sketch - Android Application  I got tired of feature-rich and slow note-t
       
       <guid>/home/</guid>
       <description>Hi there, I am Siva.
-I am a Ryerson University graduate, currently working as a Full Stack Web Developer in Toronto. I&amp;rsquo;m also a coffee-lover, environmentalist, minimalist, novice photographer and a self-proclaimed car racer, among other things.
+I am a Ryerson University graduate, currently working as a Full Stack Web Developer in Toronto. I&amp;rsquo;m also a novice photographer, environmentalist/minimalist, and a self-proclaimed car racer, among other things.
 Check out my projects or my photos.</description>
     </item>
     

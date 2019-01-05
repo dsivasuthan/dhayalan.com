@@ -1,28 +1,10 @@
 ---
 date: 2018-11-08
-title: Get Motivated
+title: Random Life Advice
 draft: true
 ---
 
-When you spend half your wake time on the interwebs every single day, you are bound to come across some materials that you find amusing, clever or motivating. That does not mean, I need constant motivation through somebody else's work but some work or compilation do open a different kind world you have never explored or thought of. The following are some of meterials I had clipped some years back on Evernote (sorry, Evernote, you dug your own grave). I had to put it somewhere before I wiped em clean.
-
-
-* “Security is a process, not a product.” — Bruce Schneier
-* Feel the fear and do it anyway. 
-* "Never bring management a problem, bring them a solution." -LH
-* One never notices what has been done; one can only see what remains to be done.- Marie Curie
-* The mark of the immature man is that he wants to die nobly for a cause, while the mark of the mature man is that he wants to live humbly for one.
- 
-10. "Luck is what happens when preparation meets opportunity." 
-9. "Nothing is less productive than doing what should not be done at all."
-8. "Inspiration exists, but it has to find you working." 
-7. "A good leader takes a little more than his share of the blame, a little less than his share of the credit."
-6. "You can't rest on your laurels. Your own body of work is yet to come."
-5. "Try not to become a person of success. Rather, become a person of value."
-4. "A man's gotta make at least one bet a day, else he could be walking around lucky and never know it."
-3. "Here is something false: You only live once."
-2. "A smooth sea never made a skillful sailor." 
-1. "Those who do not give a fuck change the world. The rest do not."
+When you spend half your wake time on the interwebs every single day, you are bound to come across some materials that you find amusing, clever or motivating. That does not mean I need constant motivation through somebody else's work but some works do open a different kind world you have never explored or thought of. The following are some of the materials I had clipped some years back on Evernote (sorry, Evernote, you dug your own grave). I had to put it somewhere before I wiped em clean.
 
 _I am not sure where I found the following_
 
@@ -126,3 +108,25 @@ _I am not sure where I found the following_
 98. Everyone feels like they’re not good enough. It’s not just you.
 99. Courage is a learned skill.
 100. Go to Iceland. It’s worth it.
+
+---
+
+10. "Luck is what happens when preparation meets opportunity."
+
+9. "Nothing is less productive than doing what should not be done at all."
+
+8. "Inspiration exists, but it has to find you working."
+
+7. "A good leader takes a little more than his share of the blame, a little less than his share of the credit."
+
+6. "You can't rest on your laurels. Your own body of work is yet to come."
+
+5. "Try not to become a person of success. Rather, become a person of value."
+
+4. "A man's gotta make at least one bet a day, else he could be walking around lucky and never know it."
+
+3. "Here is something false: You only live once."
+
+2. "A smooth sea never made a skillful sailor."
+
+1. "Those who do not give a fuck change the world. The rest do not."

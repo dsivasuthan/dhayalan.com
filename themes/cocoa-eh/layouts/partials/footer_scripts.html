@@ -17,6 +17,16 @@
   <script src="{{ .Site.BaseURL }}js/social-share-kit.min.js" defer></script>
 {{ end }}
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116839094-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-116839094-1');
+</script>
+
 {{ if .Site.Params.fathomurl }}
 <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
 <script>
