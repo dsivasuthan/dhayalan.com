@@ -31,16 +31,8 @@
 
 
 <style media="screen">
-  @font-face {
-	font-family: 'Share Tech Mono';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Share Tech Mono'), local('ShareTechMono-Regular'), url(https://fonts.gstatic.com/s/sharetechmono/v6/RQxK-3RA0Lnf3gnnnNrAsVlgUn8GogvcKKzoM9Dh-4E.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-
-* {
-	font-family: 'Share Tech Mono', monospace !important;
+  * {
+	font-family: 'Consolas', monospace !important;
 	font-weight: lighter;
 }
 
@@ -71,6 +63,7 @@ footer, header, hgroup, menu, nav, section, div.column {
 }
 body {
   line-height: 1;
+  background-color:#000;
 }
 ol, ul {
   list-style: none;
@@ -125,7 +118,7 @@ body {
   min-height: 100%;
   font-weight: 400;
   font-family: 'Share Tech Mono', monospace;
-  color: #111111;
+  color: #ccc;
   line-height: 1.6;
   text-rendering: optimizeLegibility !important;
 }
@@ -214,7 +207,7 @@ div.header .name {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #333333;
+  color: #ccc;
 }
 div.header nav {
   margin-bottom: 16px;
@@ -239,7 +232,7 @@ div.header nav ul li:last-child {
   margin-right: 0;
 }
 div.header nav ul a {
-  color: #555555;
+  color: #ccc;
   font-weight: 400;
   font-size: 18px;
   text-transform: uppercase;
@@ -250,7 +243,7 @@ div.header nav ul a {
   -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 div.header nav ul a:hover {
-  color: #111111;
+  color: #ccc;
 }
 div.footer .container {
   -webkit-align-items: center;
@@ -274,6 +267,7 @@ div.footer .container a {
   -moz-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -ms-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
   -o-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  color:white;
 }
 div.footer .container a:first-child {
   margin-left: 0;
@@ -288,14 +282,19 @@ div.footer .container a .icon {
   width: 25px;
   height: 25px;
   margin:5px;
+  color:white;
+}
+div.footer .container .divider {
+  color:gray;
 }
 div.footer .container .copyright {
-  flex-grow: 0.5;
+  /* flex-grow: 0.5; */
   text-align: start;
 }
 div.footer .container .icons {
-  flex-grow: 0.9;
-  text-align: end;
+  flex-grow: 1;
+  text-align: start;
+  color:white!important;
 }
 div.main .container {
   -webkit-align-items: center;
@@ -308,7 +307,7 @@ div.main .container {
   justify-content: flex-start;
 }
 div.main .content {
-  color: #111111;
+  color: #ccc;
   font-size: 16px;
 }
 div.main .content .title-container {
@@ -320,7 +319,7 @@ div.main .content .title-container {
   -webkit-justify-content: space-between;
   -moz-justify-content: space-between;
   -ms-justify-content: space-between;
-  justify-content: space-between;
+  justify-content: space-between; 
 }
 div.main .content .posts {
   
@@ -335,7 +334,7 @@ div.main .content .page-heading {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #333333;
+  color: #ccc;
   margin-bottom: 16px;
 }
 div.main .content .front-matter .page-heading {
@@ -458,7 +457,7 @@ section {
   padding: 0 16px;
 }
 div.column {
-  padding: 0 16px;
+  padding: 0 0px;
 }
 div.header {
   padding-top: 10px;
@@ -467,7 +466,7 @@ div.header-home {
   padding-top: 36px;
 }
 div.main {
-  padding-top: 32px;
+  padding-top: 15px;
 }
 div.main .container .content .post-item .meta {
     display: block;
@@ -512,7 +511,7 @@ div.main .content .markdown h6 {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #333333;
+  color: #ccc;
   text-transform: none;
   margin-top: 1.75rem;
 }
@@ -871,10 +870,10 @@ flex-direction: row;
 div.footer .container a {
 margin-left: 3px;
 margin-right: 3px;
-color: #666666;
+color: white;
 }
 div.footer .container a:hover {
-color: #333333;
+color: white;
 }
 div.footer .container a .icon {
 font-size: 18px;
@@ -992,7 +991,7 @@ a:hover {
 }
 
 div.main .content .markdown, div.header .name, div.header nav ul a:hover {
-    color: #181d2a;
+    color: #aaa;
 }
 
 div.header nav ul a {
@@ -1000,7 +999,7 @@ div.header nav ul a {
 }
 
 div.main .content .markdown code {
-    background-color: #f9f9f9;
+    background-color: #181d2a;
     color: <no value>;
 }
 
@@ -1072,22 +1071,20 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 <div class="header column">
 
     <div class="container">
-        
-        <a href="/"><img class="logo" src="/img/sd_icon_72.png" alt="logo"></a>
-        
         <div class="content">
             <a href="/"><div class="name"><h1>Siva Dhayalan</h1></div></a>
             <nav>
                 <ul>
+                    <li><a href="/">Home</a></li><li><a>|</a></li>
                     
                     
-                    
-                        
-                            <li><a href="/freelance/">Freelance</a></li><li><a class="text-grey">|</a></li>
-                        
                     
                         
                             <li><a href="/projects/">projects</a></li><li><a class="text-grey">|</a></li>
+                        
+                    
+                        
+                            <li><a href="/freelance/">Freelance</a></li><li><a class="text-grey">|</a></li>
                         
                     
                         
@@ -1135,11 +1132,7 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
         
 
-        <div class="copyright">
-
         
-
-        </div>
         <div class="icons">
 
         
@@ -1149,38 +1142,38 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
         
 
         
-            <a href="https://www.instagram.com/sdhayalan" rel=me target="_blank">
-                <img class="icon" src="/img/instagram.svg" alt="instagram" />
-            </a>
-        
-
-        
 
         
             <a href="https://github.com/dsivasuthan" rel=me target="_blank">
-                <img class="icon" src="/img/github.svg" alt="github" />
+                github
             </a>
         
 
         
 
+        <span class="divider">|</span>
+
         
-            <a href="https://www.linkedin.com/in/dsivasuthan" rel=me target="_blank">
-                <img class="icon" src="/img/linkedin.svg" alt="linkedin" />
+            <a href="https://www.linkedin.com/in/dsivasuthan" rel=me target="_blank"> 
+                linkedin
             </a>
         
+        
+        <span class="divider">|</span>
+        
+        
+        <a href="https://www.instagram.com/sdhayalan" rel=me target="_blank">
+            instagram
+        </a>
+        
 
+        <span class="divider">|</span>
+        
         
 
         
             <a href="mailto:me@sivasuthan.com">
-                <img class="icon" src="/img/email.svg" alt="email" />
-            </a>
-        
-
-        
-            <a href="/index.xml">
-                <img class="icon" src="/img/rss.svg" alt="rss" />
+                email
             </a>
         
 

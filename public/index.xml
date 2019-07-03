@@ -6,10 +6,20 @@
     <description>Recent content on Siva Dhayalan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 22 Aug 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>projects</title>
+      <link>/projects/</link>
+      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/</guid>
+      <description>These projects are done in my free time and some of them are as old as 15 years. Only some work projects and freelance projects are listed here. Please contact me for more details.
+Computek College  Developled this WP site within a month since the client had to move to a new site by graduation. This site perfectly captures the clients needs. They wanted a simple and minimalistic site with only the essential information categorized into different pages.</description>
+    </item>
     
     <item>
       <title>Freelance</title>
@@ -22,23 +32,13 @@ Send me an email to get a quote</description>
     </item>
     
     <item>
-      <title>projects</title>
-      <link>/projects/</link>
-      <pubDate>Sat, 22 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/</guid>
-      <description>These projects are done in my free time and some of them are as old as 15 years. Only some work projects and freelance projects are listed here. Please contact me for more details.
-ACN Reliance - WordPress site  Created this from scratch on WordPress. Although I don&amp;rsquo;t care for WordPress as a skill, I do like the ease at which you can spin up web sites with ease.</description>
-    </item>
-    
-    <item>
       <title>வணக்கம்</title>
       <link>/%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D/</link>
       <pubDate>Sat, 22 Aug 2015 00:00:00 +0000</pubDate>
       
       <guid>/%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D/</guid>
       <description>நான் சிவா. நான் ஒரு மென்பொருள் கட்டுமான பொறியியலாளர்.
-தமிழின் மீது மிகுந்த அன்பும் ஆர்வமும் கொண்டதால், கட்டாயமாக தமிழில் ஒரு பக்கமாவது நானே தட்டச்சு செய்து ஒரு பக்கம் எனது வளையத்தளத்தில் பதிவு செய்ய வேண்டும் என்பது எனது ஆசை. அதனால் அதிகாலை இரண்டு மணிக்கு இதை எனது கையடக்க தொலை பேசியில் எழுதிக்கொண்டிருக்கிறேன்.
+தமிழின் மீது மிகுந்த அன்பும் ஆர்வமும் கொண்டதால், கட்டாயமாக தமிழில் ஒரு பக்கமாவது நானே தட்டச்சு செய்து எனது வளையத்தளத்தில் பதிவு செய்ய வேண்டும் என்பது எனது ஆசை. அதனால் அதிகாலை இரண்டு மணிக்கு இதை எனது கையடக்க தொலை பேசியில் எழுதிக்கொண்டிருக்கிறேன்.
 அவ்வப்போது தமிழில் ஓரிரு பக்கங்கள் உருவாக்க நினைத்திருக்கிறேன், பார்க்கலாம்.
 ✌</description>
     </item>
@@ -49,9 +49,9 @@ ACN Reliance - WordPress site  Created this from scratch on WordPress. Although 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/home/</guid>
-      <description>Hi there, I am Siva.
-I am a Ryerson University graduate, currently working as a Full Stack Web Developer in Toronto. I&amp;rsquo;m also a novice photographer, environmentalist/minimalist, and a self-proclaimed car racer, among other things.
-Check out my projects or my photos.</description>
+      <description>Hi. I am Siva.
+I am a CompSci graduate from Ryerson University, currently working as a Full Stack Web Developer in Toronto. I&amp;rsquo;m also a novice photographer, environmentalist/minimalist, and a self-proclaimed car racer, among other things.
+Check out my projects.</description>
     </item>
     
   </channel>

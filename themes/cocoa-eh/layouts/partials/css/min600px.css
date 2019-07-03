@@ -79,10 +79,10 @@ flex-direction: row;
 div.footer .container a {
 margin-left: 3px;
 margin-right: 3px;
-color: #666666;
+color: white;
 }
 div.footer .container a:hover {
-color: #333333;
+color: white;
 }
 div.footer .container a .icon {
 font-size: 18px;
