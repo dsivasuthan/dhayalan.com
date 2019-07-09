@@ -6,10 +6,37 @@
     <description>Recent content on Siva Dhayalan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 22 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 23 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Recommended Podcasts</title>
+      <link>/posts/recommended-podcasts/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/recommended-podcasts/</guid>
+      <description>As I much as I do like to boast about the sheer amount podcasts listen(ed) to, it is not the intention of this posts. Rather, I find this a good place to share such details about me and document myself. Think of these pages like my facebook wall, minus the likes and comments, plus the added bonus of privacy. This page is something I control and no third party has access to it (except Google analytics, until I configure matamo).</description>
+    </item>
+    
+    <item>
+      <title>Awesome Software</title>
+      <link>/posts/awesome-software/</link>
+      <pubDate>Sat, 10 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/awesome-software/</guid>
+      <description>The following is a list of software I have found before but I could never rememeber the name when I am trying to brag about them to someone. So, I am putting it back where I found them. I am not planning on categorizing the list. I am just going to append to the list as I come across interesting projects on Hacker News and other sources. Consider this my TODO list, so this is neither exhaustive nor meant to be a guide.</description>
+    </item>
+    
+    <item>
+      <title>Random Life Advice</title>
+      <link>/posts/random-life-advice/</link>
+      <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/random-life-advice/</guid>
+      <description>I found the following &amp;lsquo;article&amp;rsquo; somewhere in the interwebs and had saved it some years ago. Since I was cleaning up my evernote, I wanted to keep this somewhere I can point people to or read it sometimes. This is neither a exhaustive guide to life nor is it a definitive way to live life but I am sure it might inspire some people to try different things as it did for me.</description>
+    </item>
     
     <item>
       <title>projects</title>
@@ -19,16 +46,6 @@
       <guid>/projects/</guid>
       <description>These projects are done in my free time and some of them are as old as 15 years. Only some work projects and freelance projects are listed here. Please contact me for more details.
 Computek College  Developled this WP site within a month since the client had to move to a new site by graduation. This site perfectly captures the clients needs. They wanted a simple and minimalistic site with only the essential information categorized into different pages.</description>
-    </item>
-    
-    <item>
-      <title>Freelance</title>
-      <link>/freelance/</link>
-      <pubDate>Sat, 22 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/freelance/</guid>
-      <description>Hire me to work on your new web site or Android app. So far, most of my work involves creating business/personal web sites. Depending on your need, I would use the most efficient tools to bring your vision into form.
-Send me an email to get a quote</description>
     </item>
     
     <item>
@@ -50,7 +67,8 @@ Send me an email to get a quote</description>
       
       <guid>/home/</guid>
       <description>Hi. I am Siva.
-I am a CompSci graduate from Ryerson University, currently working as a Full Stack Web Developer in Toronto. I&amp;rsquo;m also a novice photographer, environmentalist/minimalist, and a self-proclaimed car racer, among other things.
+I am a CompSci graduate from Ryerson University, currently working as a Full Stack Web Developer in Toronto. I&amp;rsquo;m also a novice photographer, environmentalist/minimalist, among other things.
+I also freelance depending on type of project. Send me an email to get a quote.
 Check out my projects.</description>
     </item>
     
