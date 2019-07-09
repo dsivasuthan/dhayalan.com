@@ -11,3 +11,6 @@ div.main .content .markdown pre {
 width: 110%;
 margin-left: -4%;
 }
+div.header nav ul a {
+  font-size: 18px!important;
+}

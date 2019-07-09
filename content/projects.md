@@ -8,6 +8,9 @@ These projects are done in my free time and some of them are as old as 15 years.
 #### [Computek College](https://computek.edu)
 * Developled this WP site within a month since the client had to move to a new site by graduation. This site perfectly captures the clients needs. They wanted a simple and minimalistic site with only the essential information categorized into different pages. They wanted the site to be fast-loading and to the point. I used Isotope.js to achieve the course filter. It turned out pretty well. 
 
+#### [Reliance Dealer subsite](http://dealer.reliancecomfort.com/)
+* This little site is something I enjoyed developing. I like it turned out, everything from the fade-in effect to how fast the site is. I refused to use much plugins — I even hand-wrote the cart functionality instead of using woocommerce. Since there isn't any checkout process, it was okay to create a cart functionality just using php. The site was fast enough to not make the cart functions AJAX. 
+
 #### [Reliance Builder](https://builder.reliancehomecomfort.com/) - WordPress site
 * Created this from scratch on WordPress. Although I don't care for WordPress as a skill, I do like the ease at which you can spin up web sites. I made this using the Understrap Minimal Skeleton. 
 

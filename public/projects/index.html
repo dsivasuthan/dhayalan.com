@@ -457,7 +457,7 @@ section {
   padding: 0 16px;
 }
 div.column {
-  padding: 0 0px;
+  padding: 0 16px;
 }
 div.header {
   padding-top: 10px;
@@ -466,7 +466,7 @@ div.header-home {
   padding-top: 36px;
 }
 div.main {
-  padding-top: 15px;
+  padding-top: 32px;
 }
 div.main .container .content .post-item .meta {
     display: block;
@@ -791,6 +791,16 @@ div.header-home .container .logo {
 ul {
   list-style-type: none;
 }
+div.header nav ul a {
+  font-size: 14px!important;
+}
+div.header nav ul li:last-child {
+  display:none;
+}
+.spacer {
+  margin-left:2px!important;
+  margin-right:2px!important;
+}
 </style>
 <style media="(min-width: 600px)">
   body {
@@ -947,7 +957,6 @@ flex-direction: row;
 div.main .content .navigation div {
 margin-top: 0em;
 }
-
 </style>
 <style media="(min-width: 769px)">
   div.main .content .markdown figure {
@@ -963,7 +972,9 @@ div.main .content .markdown pre {
 width: 110%;
 margin-left: -4%;
 }
-
+div.header nav ul a {
+  font-size: 18px!important;
+}
 </style>
 
 
@@ -1075,20 +1086,22 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
             <a href="/"><div class="name"><h1>Siva Dhayalan</h1></div></a>
             <nav>
                 <ul>
-                    <li><a href="/">Home</a></li><li><a>|</a></li>
                     
+                    
+                            <li><a href="/blog/">Blog</a></li><li class="spacer"><a>•</a></li>
                     
                     
                         
-                            <li><a href="/projects/">projects</a></li><li><a class="text-grey">|</a></li>
+                            
+                        
+                    
+                    
+                        
+                            <li><a href="/projects/">projects</a></li><li class="spacer"><a class="text-grey">•</a></li>
                         
                     
                         
-                            <li><a href="/freelance/">Freelance</a></li><li><a class="text-grey">|</a></li>
-                        
-                    
-                        
-                            <li><a href="/%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D/">வணக்கம்</a></li><li><a class="text-grey">|</a></li>
+                            <li><a href="/%E0%AE%B5%E0%AE%A3%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D/">வணக்கம்</a></li><li class="spacer"><a class="text-grey">•</a></li>
                         
                     
                         
@@ -1123,6 +1136,12 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
 <ul>
 <li>Developled this WP site within a month since the client had to move to a new site by graduation. This site perfectly captures the clients needs. They wanted a simple and minimalistic site with only the essential information categorized into different pages. They wanted the site to be fast-loading and to the point. I used Isotope.js to achieve the course filter. It turned out pretty well.</li>
+</ul>
+
+<h4 id="reliance-dealer-subsite-http-dealer-reliancecomfort-com"><a href="http://dealer.reliancecomfort.com/">Reliance Dealer subsite</a></h4>
+
+<ul>
+<li>This little site is something I enjoyed developing. I like it turned out, everything from the fade-in effect to how fast the site is. I refused to use much plugins — I even hand-wrote the cart functionality instead of using woocommerce. Since there isn&rsquo;t any checkout process, it was okay to create a cart functionality just using php. The site was fast enough to not make the cart functions AJAX.</li>
 </ul>
 
 <h4 id="reliance-builder-https-builder-reliancehomecomfort-com-wordpress-site"><a href="https://builder.reliancehomecomfort.com/">Reliance Builder</a> - WordPress site</h4>

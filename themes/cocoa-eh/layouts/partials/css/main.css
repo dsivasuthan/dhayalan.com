@@ -434,7 +434,7 @@ section {
   padding: 0 16px;
 }
 div.column {
-  padding: 0 0px;
+  padding: 0 16px;
 }
 div.header {
   padding-top: 10px;
@@ -443,7 +443,7 @@ div.header-home {
   padding-top: 36px;
 }
 div.main {
-  padding-top: 15px;
+  padding-top: 32px;
 }
 div.main .container .content .post-item .meta {
     display: block;
@@ -769,4 +769,14 @@ div.header-home .container .logo {
 }
 ul {
   list-style-type: none;
+}
+div.header nav ul a {
+  font-size: 14px!important;
+}
+div.header nav ul li:last-child {
+  display:none;
+}
+.spacer {
+  margin-left:2px!important;
+  margin-right:2px!important;
 }
