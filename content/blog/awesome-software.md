@@ -1,20 +1,23 @@
 ---
 date: 2018-11-10
-title: Awesome Software
+title: Awesome Software/Websites
 draft: false
 ---
 
 The following is a list of software I have found before but I could never rememeber the name when I am trying to brag about them to someone. So, I am putting it back where I found them. I am not planning on categorizing the list. I am just going to append to the list as I come across interesting projects on Hacker News and other sources. Consider this my TODO list, so this is neither exhaustive nor meant to be a guide.
  
+## Android Apps
+* [FOSS Android apps](https://gitlab.com/Ashpex/android-FOSS-apps)
 
 ## Windows Tools
 * https://the-eye.eu/public/MSDN/
 * https://github.com/Nummer/Destroy-Windows-10-Spying
-
-## Interesting
+* https://github.com/Awesome-Windows/Awesome#readme
 * http://mute.fm/ 
  
-## Web Services  
+## Web Services
+* [Visualize flight prices](https://greatescape.co)
+* https://github.com/schollz/hostyoself - host files on your personal devices 
 * http://www.10minutemail.com/
 * https://privacy.com/ - create virtual credit cards
 * http://gen.lib.rus.ec/ - ebooks
@@ -36,3 +39,6 @@ The following is a list of software I have found before but I could never rememe
 
 ## Image Manipulation
 * https://www.remove.bg/
+
+## Finance
+* [Combined Reddit Financial subreddits](https://www.reddit.com/user/ikonoclasm/m/financialsubreddits)

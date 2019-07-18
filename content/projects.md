@@ -49,12 +49,12 @@ These projects are done in my free time and some of them are as old as 15 years.
 * Used PHP and MySQL to implement a simple search function to retrieve the title, year and Rotten Tomatoes score of the Academic Award-winning feature films.
 
 #### [Thirukural (திருக்குறள்)](https://github.com/dsivasuthan/thirukurals)
-* Thiruvalluvar wrote this classic Tamil sangam literature, consisting of 1330 couplets or Kurals, sometime between the third and first centuries BCE. I came across this compilation some time ago and made a copy/backup for myself. Thanks to all those who help compile this timeless piece of writing.
+* Thiruvalluvar wrote this classic Tamil sangam literature, consisting of 1330 couplets or Kurals, sometime between the third and first centuries BCE. Thirukural gives the layman ideas about how s/he can improve their life and that of others. The work is similar to that of Socrates and Plato, but this guy showered everyday (unlike Socrates) and had a cooler beard.  I came across this compilation some time ago and made a copy/backup for myself. Thanks to all those who help compile this timeless piece of writing.
 
 ### Old Stuff:
 
 #### [my old homepage](/projects/old_stuff/HTML.htm)
-* This links to an old "website" I had built about 15 years ago
+* This links to an old "website" I had built about 15 years ago. Imagine a kid, 15 years old, recently discovered Visual Basic, has no access to internet at home, but managed to find a Visual Basic  text book at the library, has nothing else to do on the computer except a bootlegged CD copy of Visual Basic 6.0. That kid tried every single example from the book, and used all the system libraries available to trigger system changes via his code. He made little programs that did minute simple tasks that we take for granted in current age. That kid made installers for each little program he made and developed a simple HTML site (of course with iframes for navigation menu) and published using one of those free hosting companies which litter your site countless ads. And of course, he added a 'site visitor counter' at the footer and made sure to check it every now and then to see if new visitors came to the site. 
 
 ### School Projects:
 
