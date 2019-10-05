@@ -28,6 +28,10 @@
   </url>
   
   <url>
+    <loc>/_/</loc>
+  </url>
+  
+  <url>
     <loc>/blog/</loc>
     <lastmod>2018-12-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
