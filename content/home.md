@@ -3,7 +3,7 @@ title = "Home"
 +++
 
 Hi.
-I am Siva. 
+I am Siva.
 
 I am a CompSci graduate from Ryerson University, currently working as a Full Stack Web Developer in Toronto. I'm also a novice photographer, environmentalist/minimalist, among other things.
 

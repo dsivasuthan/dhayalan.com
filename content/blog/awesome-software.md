@@ -36,6 +36,7 @@ The following is a list of software I have found before but I could never rememe
 * TheNounProject.com - find icons
 * https://www.flaticon.com/ - find icons
 * http://magzdb.org/j/1828 - magazines
+* https://trennd.co/ - trends in webiverse
 
 ## Image Manipulation
 * https://www.remove.bg/
