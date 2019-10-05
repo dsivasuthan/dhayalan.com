@@ -1,9 +1,5 @@
 node_modules
 npm-debug.log
-.firebase/*
 firebase-debug.log
 *.cache
-.firebase/*.cache
 .firebase
-.firebase/
-.firebase/hosting.cHVibGlj.cache
