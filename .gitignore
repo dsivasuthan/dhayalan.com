@@ -4,3 +4,4 @@ npm-debug.log
 firebase-debug.log
 *.cache
 .firebase/*.cache
+.firebase
