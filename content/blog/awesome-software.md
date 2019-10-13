@@ -43,3 +43,11 @@ The following is a list of software I have found before but I could never rememe
 
 ## Finance
 * [Combined Reddit Financial subreddits](https://www.reddit.com/user/ikonoclasm/m/financialsubreddits)
+
+## Other
+* [Sans Forgetica](http://sansforgetica.rmit/) - a font designed to help you remember your study notes
+* [Unscii](http://pelulamu.net/unscii/) – a bitmapped Unicode font for blocky graphics
+
+## Computer Science
+* [The Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf)
+* [Awesome Interviews](https://github.com/MaximAbramchuck/awesome-interview-questions)
