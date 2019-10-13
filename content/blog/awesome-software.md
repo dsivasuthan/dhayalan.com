@@ -33,7 +33,7 @@ The following is a list of software I have found before but I could never rememe
 * http://usefulinterweb.com/ - useful websites
 * http://www.wolframalpha.com/
 * https://tcrf.net/The_Cutting_Room_Floor - easter eggs 
-* TheNounProject.com - find icons
+* [TheNounProject](http://TheNounProject.com) - find icons
 * https://www.flaticon.com/ - find icons
 * http://magzdb.org/j/1828 - magazines
 * https://trennd.co/ - trends in webiverse
