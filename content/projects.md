@@ -1,18 +1,21 @@
 +++
-date = "2018-08-22"
+date = "2019-08-22"
 title = "projects"
 +++
 
 These projects are done in my free time and some of them are as old as 15 years. Only some work projects and freelance projects are listed here. Please contact me for more details.
 
+#### [Reliance UEI](#)
+* This is a finance project made using VueJS/Serverless. This project helped me really delve deep into AWS and get to use many AWS services like Cognito, CloudWatch, CloudFront, S3, API Gateway/Lambda, and DynamoDB among other things.
+
 #### [Computek College](https://computek.edu)
-* Developled this WP site within a month since the client had to move to a new site by graduation. This site perfectly captures the clients needs. They wanted a simple and minimalistic site with only the essential information categorized into different pages. They wanted the site to be fast-loading and to the point. I used Isotope.js to achieve the course filter. It turned out pretty well. 
+* Developled this WP site within a month since the client had to move to a new site by graduation. This site perfectly captures the clients needs. They wanted a simple and minimalistic site with only the essential information categorized into different pages. They wanted the site to be fast-loading and to the point. I used Isotope.js to achieve the course filter. It turned out pretty well.
 
 #### [Reliance Dealer subsite](http://dealer.reliancecomfort.com/)
-* This little site is something I enjoyed developing. I like it turned out, everything from the fade-in effect to how fast the site is. I refused to use much plugins — I even hand-wrote the cart functionality instead of using woocommerce. Since there isn't any checkout process, it was okay to create a cart functionality just using php. The site was fast enough to not make the cart functions AJAX. 
+* This little site is something I enjoyed developing. I like it turned out, everything from the fade-in effect to how fast the site is. I refused to use much plugins — I even hand-wrote the cart functionality instead of using woocommerce. Since there isn't any checkout process, it was okay to create a cart functionality just using php. The site was fast enough to not make the cart functions AJAX.
 
 #### [Reliance Builder](https://builder.reliancehomecomfort.com/) - WordPress site
-* Created this from scratch on WordPress. Although I don't care for WordPress as a skill, I do like the ease at which you can spin up web sites. I made this using the Understrap Minimal Skeleton. 
+* Created this from scratch on WordPress. Although I don't care for WordPress as a skill, I do like the ease at which you can spin up web sites. I made this using the Understrap Minimal Skeleton.e
 
 #### [Reliance Home Comfort](https://reliancehomecomfort.com) - Infrastructure
 * I got my first exposure to Serverless architecture from this project. I wrote the localization logic using AWS Lambda@Edge. I also helped setup this as a High Availability site on AWS. Apart from the backend programming, I also developed new templates for this, one of which you can see [here](https://reliancehomecomfort.com/toronto/rent-buy-air-conditioners/)
@@ -54,7 +57,7 @@ These projects are done in my free time and some of them are as old as 15 years.
 ### Old Stuff:
 
 #### [my old homepage](/projects/old_stuff/HTML.htm)
-* This links to an old "website" I had built about 15 years ago. Imagine a kid, 15 years old, recently discovered Visual Basic, has no access to internet at home, but managed to find a Visual Basic  text book at the library, has nothing else to do on the computer except a bootlegged CD copy of Visual Basic 6.0. That kid tried every single example from the book, and used all the system libraries available to trigger system changes via his code. He made little programs that did minute simple tasks that we take for granted in current age. That kid made installers for each little program he made and developed a simple HTML site (of course with iframes for navigation menu) and published using one of those free hosting companies which litter your site countless ads. And of course, he added a 'site visitor counter' at the footer and made sure to check it every now and then to see if new visitors came to the site. 
+* This links to an old "website" I had built about 15 years ago. Imagine a kid, 15 years old, recently discovered Visual Basic, has no access to internet at home, but managed to find a Visual Basic  text book at the library, has nothing else to do on the computer except a bootlegged CD copy of Visual Basic 6.0. That kid tried every single example from the book, and used all the system libraries available to trigger system changes via his code. He made little programs that did minute simple tasks that we take for granted in current age. That kid made installers for each little program he made and developed a simple HTML site (of course with iframes for navigation menu) and published using one of those free hosting companies which litter your site countless ads. And of course, he added a 'site visitor counter' at the footer and made sure to check it every now and then to see if new visitors came to the site.
 
 ### School Projects:
 

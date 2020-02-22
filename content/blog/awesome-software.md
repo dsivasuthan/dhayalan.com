@@ -13,11 +13,11 @@ The following is a list of software I have found before but I could never rememe
 * https://the-eye.eu/public/MSDN/
 * https://github.com/Nummer/Destroy-Windows-10-Spying
 * https://github.com/Awesome-Windows/Awesome#readme
-* http://mute.fm/ 
+* http://mute.fm/
  
 ## Web Services
 * [Visualize flight prices](https://greatescape.co)
-* https://github.com/schollz/hostyoself - host files on your personal devices 
+* https://github.com/schollz/hostyoself - host files on your personal devices
 * http://www.10minutemail.com/
 * https://privacy.com/ - create virtual credit cards
 * http://gen.lib.rus.ec/ - ebooks
@@ -32,7 +32,7 @@ The following is a list of software I have found before but I could never rememe
 * http://radio.garden/ - radio
 * http://usefulinterweb.com/ - useful websites
 * http://www.wolframalpha.com/
-* https://tcrf.net/The_Cutting_Room_Floor - easter eggs 
+* https://tcrf.net/The_Cutting_Room_Floor - easter eggs
 * [TheNounProject](http://TheNounProject.com) - find icons
 * https://www.flaticon.com/ - find icons
 * http://magzdb.org/j/1828 - magazines
