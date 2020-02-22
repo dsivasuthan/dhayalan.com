@@ -6,10 +6,33 @@
     <description>Recent content on Siva Dhayalan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 23 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>projects</title>
+      <link>/projects/</link>
+      <pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/</guid>
+      <description>These projects are done in my free time and some of them are as old as 15 years. Only some work projects and freelance projects are listed here. Please contact me for more details.
+Reliance UEI  This is a finance project made using VueJS/Serverless. This project helped me really delve deep into AWS and get to use many AWS services like Cognito, CloudWatch, CloudFront, S3, API Gateway/Lambda, and DynamoDB among other things.</description>
+    </item>
+    
+    <item>
+      <title>Useful CLI commands</title>
+      <link>/posts/useful-cli-commands/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/useful-cli-commands/</guid>
+      <description> List network devices
+Win arp -a  Make VS Code remember Github credentials; Easier if you are working with multiple accounts for work and personal.
+git config credential.helper store  Install Node
+ Install NPM
+curl -L https://npmjs.org/install.sh | sudo sh   </description>
+    </item>
     
     <item>
       <title>Recommended Podcasts</title>
@@ -22,11 +45,22 @@
     
     <item>
       <title>Awesome Software/Websites</title>
-      <link>/posts/awesome-software-websites/</link>
+      <link>/posts/awesome-software/websites/</link>
       <pubDate>Sat, 10 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/posts/awesome-software-websites/</guid>
+      <guid>/posts/awesome-software/websites/</guid>
       <description>The following is a list of software I have found before but I could never rememeber the name when I am trying to brag about them to someone. So, I am putting it back where I found them. I am not planning on categorizing the list. I am just going to append to the list as I come across interesting projects on Hacker News and other sources. Consider this my TODO list, so this is neither exhaustive nor meant to be a guide.</description>
+    </item>
+    
+    <item>
+      <title>Misc Troubleshooting</title>
+      <link>/posts/misc-troubleshooting/</link>
+      <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/misc-troubleshooting/</guid>
+      <description> Virtual Box issue on Windows 10 If you are not able to get Vitual Box in Windows, try running the following (as admin)
+dism.exe /Online /Disable-Feature:Microsoft-Hyper-V bcdedit /set hypervisorlaunchtype off  Also make sure to remove the following from Windows Program and Features: - Hyper-V
+- Virtualizing Platform </description>
     </item>
     
     <item>
@@ -36,16 +70,6 @@
       
       <guid>/posts/random-life-advice/</guid>
       <description>I found the following &amp;lsquo;article&amp;rsquo; somewhere in the interwebs and had saved it some years ago. Since I was cleaning up my evernote, I wanted to keep this somewhere I can point people to or read it sometimes. This is neither a exhaustive guide to life nor is it a definitive way to live life but I am sure it might inspire some people to try different things as it did for me.</description>
-    </item>
-    
-    <item>
-      <title>projects</title>
-      <link>/projects/</link>
-      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/</guid>
-      <description>These projects are done in my free time and some of them are as old as 15 years. Only some work projects and freelance projects are listed here. Please contact me for more details.
-Computek College  Developled this WP site within a month since the client had to move to a new site by graduation. This site perfectly captures the clients needs. They wanted a simple and minimalistic site with only the essential information categorized into different pages.</description>
     </item>
     
     <item>
@@ -77,7 +101,7 @@ Computek College  Developled this WP site within a month since the client had to
       <guid>/home/</guid>
       <description>Hi. I am Siva.
 I am a CompSci graduate from Ryerson University, currently working as a Full Stack Web Developer in Toronto. I&amp;rsquo;m also a novice photographer, environmentalist/minimalist, among other things.
-I also freelance depending on type of project. Send me an email to get a quote.
+I also freelance depending on type of the project. Send me an email to get a quote.
 Check out my projects.</description>
     </item>
     

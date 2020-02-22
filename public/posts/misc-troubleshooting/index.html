@@ -12,9 +12,9 @@
 <meta property="og:site_name" content="Siva Dhayalan" />
 <meta property="og:locale" content="en-US" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/blog/" />
-<meta property="og:title" content="Blog" />
-<meta property="twitter:title" content="Blog">
+<meta property="og:url" content="/posts/misc-troubleshooting/" />
+<meta property="og:title" content="Misc Troubleshooting" />
+<meta property="twitter:title" content="Misc Troubleshooting">
 
     <meta property="twitter:card" content="summary">
 
@@ -24,10 +24,10 @@
 <title>
 
 
-     Siva Dhayalan - Blog 
+     Siva Dhayalan - Misc Troubleshooting 
 
 </title>
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/posts/misc-troubleshooting/">
 
 
 <style media="screen">
@@ -1076,8 +1076,6 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
 
 
-  <link href="/blog/index.xml" rel="alternate" type="application/rss+xml" title="Siva Dhayalan" />
-
 </head>
 
 
@@ -1121,64 +1119,96 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
     </div>
 </div>
 
-<div class="main column">
+
+
+
+
+<div class="main post non-narrow zero-top-spacing column">
     <div class="container">
         <div class="content">
-            <div class="posts">
-                <div class="page-heading">Blog</div>
-                <ul>
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    
+    Misc Troubleshooting
+    
+
+</div>
+
+                </div>
+                <div class="meta">
+                    <div class="date" title="Thu Nov 8 2018 00:00:00 UTC">[Nov]</div>
                     
-                        <li class="groupby">2019</li>
-                        
-                            <li class="post-item">
-    <span class="meta">--</span>
-    
-    <a href="/posts/useful-cli-commands/"><span>Useful CLI commands</span></a>
-    
-</li>
-
-                        
-                    
-                        <li class="groupby">2018</li>
-                        
-                            <li class="post-item">
-    <span class="meta">--</span>
-    
-    <a href="/posts/recommended-podcasts/"><span>Recommended Podcasts</span></a>
-    
-</li>
-
-                        
-                            <li class="post-item">
-    <span class="meta">--</span>
-    
-    <a href="/posts/awesome-software/websites/"><span>Awesome Software/Websites</span></a>
-    
-</li>
-
-                        
-                            <li class="post-item">
-    <span class="meta">--</span>
-    
-    <a href="/posts/random-life-advice/"><span>Random Life Advice</span></a>
-    
-</li>
-
-                        
-                            <li class="post-item">
-    <span class="meta">--</span>
-    
-    <a href="/posts/misc-troubleshooting/"><span>Misc Troubleshooting</span></a>
-    
-</li>
-
                         
                     
-                </ul>
+                    
+                    <div class="reading-time middot">1 minute read</div>
+                    
+                    <div class="tags">
+                        <ul>
+                          
+                        </ul>
+                    </div>
+                    <div class="tags">
+                        <ul>
+                          
+                          
+                        </ul>
+                    </div>
+                </div>
             </div>
+            <div class="markdown">
+                
+    
+    
+
+<h1 id="virtual-box-issue-on-windows-10">Virtual Box issue on Windows 10</h1>
+
+<p>If you are not able to get Vitual Box in Windows, try running the following (as admin)</p>
+
+<pre><code>dism.exe /Online /Disable-Feature:Microsoft-Hyper-V
+
+bcdedit /set hypervisorlaunchtype off
+</code></pre>
+
+<p>Also make sure to remove the following from Windows Program and Features:
+- Hyper-V</p>
+
+<h2 id="virtualizing-platform">- Virtualizing Platform</h2>
+
+
+            </div>
+            
+            
+            <br>
+            <div class="navigation">
+                
+                <div>
+                    <img class="icon" src="/img/back.svg" alt="back" />
+                    <a href="/posts/random-life-advice/">Random Life Advice</a>
+                </div>
+                
+                <div style="width: 100%;"></div>
+                
+                <div>
+                    <a href="/posts/awesome-software/websites/">Awesome Software/Websites</a>
+                    <img class="icon" src="/img/next.svg" alt="next" />
+                </div>
+                
+            </div>
+            
+            
+
+            
+
+            
         </div>
     </div>
 </div>
+
+
+
 <div class="footer column">
     <div class="container">
 
