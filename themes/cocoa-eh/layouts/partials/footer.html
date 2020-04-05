@@ -25,12 +25,6 @@
         </div-->
         <div class="icons">
 
-        {{ if .Site.Params._500px }}
-            <a href="https://500px.com/{{ .Site.Params._500px }}" rel=me target="_blank">
-                <img class="icon" src="{{ .Site.BaseURL }}img/500px.svg" alt="500px" />
-            </a>
-        {{ end }}
-
         {{ if .Site.Params.itch_io }}
             <a href="https://{{ .Site.Params.itch_io }}.itch.io" rel=me target="_blank">
                 <img class="icon" src="{{ .Site.BaseURL }}img/itch.io.svg" alt="itch.io" />
@@ -69,15 +63,20 @@
             </a>
         {{ end }}
         
-        <span class="divider">|</span>
-        
         {{ if .Site.Params.instagram }}
         <a href="https://www.instagram.com/{{ .Site.Params.instagram }}" rel=me target="_blank">
             instagram
         </a>
         {{ end }}
 
-        <span class="divider">|</span>
+
+        {{ if .Site.Params.flickr }}
+            <span class="divider">|</span>
+
+            <a href="https://www.flickr.com/photos/{{ .Site.Params.flickr }}" rel=me target="_blank">
+                flickr
+            </a>
+        {{ end }}
         
         {{ if .Site.Params.keybase }}
             <a href="https://keybase.io/{{ .Site.Params.keybase}}" rel=me target="_blank">
@@ -86,6 +85,8 @@
         {{ end }}
 
         {{ if .Site.Params.email }}
+            <span class="divider">|</span>
+            
             <a href="mailto:{{ .Site.Params.email }}">
                 email
             </a>
