@@ -783,3 +783,10 @@ div.header nav ul li:last-child {
 .navigation .icon  {
   filter:invert(1);
 }
+.link-icon {
+  width:18px;
+  height:18px;
+  /* padding-top:5px; */
+  vertical-align: middle;
+  fill:white;
+}

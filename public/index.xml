@@ -28,10 +28,9 @@ Reliance UEI  This is a finance project made using VueJS/Serverless. This projec
       
       <guid>/posts/useful-cli-commands/</guid>
       <description>These are just documentation for me because I don&amp;rsquo;t want to remember them. It is not a guide for anything.
- awk
-awk &#39;/regex/&#39; awk &#39;!/regex/&#39; awk &#39;BEGIN{a=5; b=2.5; print a+b}&#39; awk &#39;{sub(/:/, &amp;quot;-&amp;quot;)} 1&#39; // subtitution awk &#39;{gsub(/:/, &amp;quot;-&amp;quot;)} 1&#39;  List network devices
-Win: arp -a  Make VS Code remember Github credentials; Easier if you are working with multiple accounts for work and personal.
-git config credential.helper store  Install Node</description>
+ remap right alt key with context menu button (I miss the context button on my Thinkpad)
+// add this to your startup script to make it permanent xmodmap -e &amp;quot;keycode 108 = Menu&amp;quot;  awk
+awk &#39;/regex/&#39; awk &#39;!/regex/&#39; awk &#39;BEGIN{a=5; b=2.5; print a+b}&#39; awk &#39;{sub(/:/, &amp;quot;-&amp;quot;)} 1&#39; // subtitution awk &#39;{gsub(/:/, &amp;quot;-&amp;quot;)} 1&#39;  List network devices</description>
     </item>
     
     <item>

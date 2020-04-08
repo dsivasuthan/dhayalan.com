@@ -6,6 +6,13 @@ draft: false
 
 These are just documentation for me because I don't want to remember them. It is not a guide for anything.
 
+* remap right alt key with context menu button (I miss the context button on my Thinkpad)
+
+	```
+	// add this to your startup script to make it permanent
+	xmodmap -e "keycode  108 = Menu"
+	```
+
 * awk
 
 	```
