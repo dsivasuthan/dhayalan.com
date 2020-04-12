@@ -40,3 +40,17 @@ These are just documentation for me because I don't want to remember them. It is
 * Install NPM
 
 		curl -L https://npmjs.org/install.sh | sudo sh
+
+* Print exit code of previous-run program
+
+	`echo $?`
+
+* PATH manipulation
+
+	```
+	env | grep PATH
+
+	echo $PATH
+
+	export PATH=<previous-paths>:<new-path>
+	```
