@@ -4,53 +4,86 @@ title: Useful CLI commands
 draft: false
 ---
 
-These are just documentation for me because I don't want to remember them. It is not a guide for anything.
+These are just reminders/documentation for me because I don't want to remember them. It is not a guide for anything, it just has commands and tricks I use when reinstalling OS or fixing someone's computer.
 
-* remap right alt key with context menu button (I miss the context button on my Thinkpad)
+* GNU/Linux
+	* remap right alt key with context menu button (I miss the context button on my ThinkPad)
 
-	```
-	// add this to your startup script to make it permanent
-	xmodmap -e "keycode  108 = Menu"
-	```
+		```
+		// add this to your startup script to make it permanent
+		xmodmap -e "keycode  108 = Menu"
+		```
+	* awk
 
-* awk
+		```
+		awk '/regex/'
+		awk '!/regex/'
 
-	```
-	awk '/regex/'
-	awk '!/regex/'
+		awk 'BEGIN{a=5; b=2.5; print a+b}'
+		awk '{sub(/:/, "-")} 1' // subtitution
+		awk '{gsub(/:/, "-")} 1'
+		```
 
-	awk 'BEGIN{a=5; b=2.5; print a+b}'
-	awk '{sub(/:/, "-")} 1' // subtitution
-	awk '{gsub(/:/, "-")} 1'
-	```
+	* Make VS Code remember Github credentials; Easier if you are working with multiple accounts for work and personal.
 
-* List network devices
+		`git config credential.helper store`
 
-	```
-	Win:
-	arp -a
-	```
+	* Print exit code of previous-run program
 
-* Make VS Code remember Github credentials; Easier if you are working with multiple accounts for work and personal.
+		`echo $?`
 
-		git config credential.helper store
+* Windows
+	* PATH manipulation
 
-* Install Node
+		```
+		env | grep PATH
+		echo $PATH
+		export PATH=<previous-paths>:<new-path>
+		```
 
-* Install NPM
+	* List network devices
+	
+		`arp -a`
 
+* nodejs
+
+	* Installing NPM
+
+		```
 		curl -L https://npmjs.org/install.sh | sudo sh
+		```
 
-* Print exit code of previous-run program
+	* Clear node modules cache and install dependencies
 
-	`echo $?`
+		```
+		rm node_modules -r
+		npm cache clean --force
+		npm cache verify
+		npm install
+		```
 
-* PATH manipulation
+*	CLI
 
-	```
-	env | grep PATH
+	* youtube-dl - best audio
 
-	echo $PATH
+		```
+		youtube-dl -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0
+		```
 
-	export PATH=<previous-paths>:<new-path>
-	```
+	* termux - setting up, etc
+
+		* settings file `~/.termux/termux.properties`
+		* add extra touch keyboard buttons
+			
+			```
+			extra-keys = [ \
+				['ESC','|','/','HOME','UP','END','PGUP','DEL'], \
+				['TAB','CTRL','ALT','LEFT','DOWN','RIGHT','PGDN','BKSP'] \
+			]
+			```
+		
+		* reload settings
+
+			```
+			termux-reload-settings
+			```
