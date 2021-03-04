@@ -51,3 +51,13 @@ The following is a list of software and tweaks I added to make it viable for me.
 	sudo apt install -y vlc
 	sudo apt install neofetch // everybody needs to show off their unix
   ```
+
+* Install and tweak touchpad drivers
+
+	The default values for touchpad sensitivity is very janky. You will have to install and tweak as shown below. [Find more details here.](https://forums.linuxmint.com/viewtopic.php?p=765618#p765618)
+
+	```
+	sudo apt install xserver-xorg-input-synaptics // and reboot pc
+	xinput // to find the touchpad device id
+	xinput list-props X // replace X with touchpad device id
+	xinput --set-prop X 316 14 17 128 // replace X, and tweak the numbers as necessary. These nums worked for me. FingerLow, FingerHigh, and FingerPress.
