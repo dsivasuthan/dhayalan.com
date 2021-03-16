@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "firebase": "^7.17.1",
     "markdown-to-html": "0.0.13"
   },
   "devDependencies": {},
